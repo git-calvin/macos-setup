@@ -542,4 +542,57 @@ webgl.disabled = true
 browser.sessionstore.privacy_level = 2 
 network.IDN_show_punycode = true
 ```
+***
 
+#### MacOS Applications
+
+```
+Alfred 4 PowerPack
+Amphetamine
+BalenaEtcher
+CleanMyMac X
+Dash
+Dashlane
+Deliveries
+Discord
+Dropbox
+ExpressVPN
+Firefox
+Google Chrome
+Cydia Impactor
+Geekbench 5
+Handbrake
+iStat Menus
+iTerm2
+Macs Fan Control
+Microsoft Office (Word, Excel, Powerpoint, Outlook, Teams, Note)
+Microsoft Remote Desktop
+PDF Expert
+Hemingway Editor
+Ulysses
+Typora
+Slack
+Sublime Text 3
+The Unarchiver
+Wipr
+Transmission BT
+Transmit
+Tower
+VirtualBox
+Visual Studio Code
+VLC Media Player
+VMWare Fusion 11 Pro
+WeChat
+WireShark
+Xcode
+MacVIM
+NetEase Music
+Malus VPN
+Cricut Design Space
+Pixelmator
+Pixelmator Pro
+Tor Browser
+Translate Tab
+WifiSpoof
+[JamWiFi](macheads101.com/pages/downloads/mac/JamWiFi.app.zip)
+Jetbrains
