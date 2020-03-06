@@ -1,4 +1,4 @@
-# MAC OS DEVELOPMENT SETUP
+# MAC OS SETUP
 By [git-calvin](https://www.github.com/git-calvin) on 03/05/2020
 
 ***
