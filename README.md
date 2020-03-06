@@ -231,6 +231,14 @@ $ brew install node
 ```
 ***
 
+### <u>Yarn</u>
+
+```
+$ brew install yarn --ignore-dependencies
+```
+
+***
+
 ### <u>Go</u>
 
 A statically typed, complied programming language designed at Google. Similar to C, but with memory safety, garbarge collection, structural typing, and CSP-style concurrency. 
