@@ -91,7 +91,7 @@ $ ssh-keygen -o -a 256 -t ed25519
 
 To copy public key to a particular server, use `ssh-copy-id <user@hostname>`
 
-To setup Github, copy and paste SSH key to Github website. use `cat ~/.ssh/id_ed25519.pub` to see the key.
+To setup Github, copy and paste SSH key to Github website. use `pbcopy < ~/.ssh/id_ed25519.pub` to copy to clipboard.
 
 To verify, `ssh -T git@github.com`, you should get message "sucessfully authenticated". 
 
