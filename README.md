@@ -330,7 +330,7 @@ Add the following lines to `/etc/hosts`:
 127.0.0.1 license.sublimehq.com
 127.0.0.1 www.sublimetext.com
 ```
-<!--
+
 License Key for Sublime Text 3:  (Working as of 03-05-2020)
 
 ```
@@ -348,7 +348,7 @@ DD9AF44B 99C49590 D2DBDEE1 75860FD2
 8C8BB2AD B2ECE5A4 EFC08AF2 25A9B864
 ------ END LICENSE ------
 ```
--->
+
 Settings for Sublime:
 
 ```
@@ -543,7 +543,7 @@ browser.sessionstore.privacy_level = 2
 network.IDN_show_punycode = true
 ```
 ***
-<!--
+
 #### MacOS Applications
 
 ```
@@ -597,4 +597,4 @@ WifiSpoof
 Jetbrains
 ```
 [JamWiFi](http://macheads101.com/pages/downloads/mac/JamWiFi.app.zip)
--->
+
