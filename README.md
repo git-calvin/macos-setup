@@ -594,5 +594,6 @@ Pixelmator Pro
 Tor Browser
 Translate Tab
 WifiSpoof
-[JamWiFi](<http://macheads101.com/pages/downloads/mac/JamWiFi.app.zip>)
 Jetbrains
+'''
+[JamWiFi](http://macheads101.com/pages/downloads/mac/JamWiFi.app.zip)
