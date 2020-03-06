@@ -169,6 +169,7 @@ A interpreted, high-level, general-purpose programming language.
 $ brew install rbenv ruby-build
 $ echo 'if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi' >> ~/.zshrc
 $ source ~/.zshrc
+$ rbenv install -l
 $ rbenv install 2.7.0
 $ rbenv global 2.7.0
 $ ruby -v
