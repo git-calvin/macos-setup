@@ -235,6 +235,8 @@ $ brew install node
 
 ### <u>Yarn</u>
 
+A package manager for your code. It allows your to use and share code with other developers quickly and securely.
+
 ```
 $ brew install yarn --ignore-dependencies
 ```
