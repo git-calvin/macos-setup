@@ -3,7 +3,7 @@ By [git-calvin](https://www.github.com/git-calvin) on 03/05/2020
 
 ***
 
-#### <u>iTerm2</u>
+### <u>iTerm2</u>
 
 iTerm2 brings the terminal into the modern age with features you never knew you always wanted. 
 
@@ -13,7 +13,7 @@ Download [iTerm2 Themes](https://github.com/mbadolato/iTerm2-Color-Schemes/zipba
 
 ***
 
-#### <u>Command Line Tools for Xcode</u>
+### <u>Command Line Tools for Xcode</u>
 
 Download the macOS SDK, headers, and build tools. These tools make it easy to install open source software or develop on UNIX.
 
@@ -22,7 +22,7 @@ $ xcode-select --install
 ```
 ***
 
-#### <u>Homebrew</u>
+### <u>Homebrew</u>
 
 Homebrew installs [the stuff](https://formulae.brew.sh/formula/) you need that Apple didn't. 
 
@@ -33,7 +33,7 @@ $ /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/inst
 ```
 ***
 
-#### <u>Zsh</u>
+### <u>Zsh</u>
 
 A powerful shell designed for interactive use. Features of bash, tsh, and tcsh are incorporated into zsh. 
 
@@ -42,7 +42,7 @@ $ brew install zsh
 ```
 ***
 
-#### <u>Oh My Zsh</u>
+### <u>Oh My Zsh</u>
 
 A community driven framework for managing your Zsh configuration. It comes bundled with thousands of helpful functions, helpers, plugins, and themes.
 
@@ -65,7 +65,7 @@ $ source ~/.zshrc
 ```
 ***
 
-#### <u>Git</u>
+### <u>Git</u>
 
 A distributed version control system for tracking changes in souce code during software development.
 
@@ -81,7 +81,7 @@ $ git config --global color.ui auto
 ```
 ***
 
-#### <u>Generate SSH Keys</u>
+### <u>Generate SSH Keys</u>
 
 A SSH key is an access credential in the SSH protocol. Its function is similar to that of user names and passwords, but the keys are primarily used for automated processes and for implementing single sign-ons. 
 
@@ -97,7 +97,7 @@ To verify, `ssh -T git@github.com`, you should get message "sucessfully authenti
 
 ***
 
-#### <u>Powerlevel10k</u>
+### <u>Powerlevel10k</u>
 
 A theme for Zsh. It emphasizes speed, flexibility, and out-of-the-box expierence. With Powerlevel10K, there is no prompt lag. 
 
@@ -117,14 +117,14 @@ To configure, use `p10k configure`
 
 ***
 
-#### <u>Homebrew Packages</u>
+### <u>Homebrew Packages</u>
 
 ```bash
 $ brew install tree fzf ack htop httpd gcc mas neofetch nmap openssh openssl p7zip rsync speedtest-cli ssh-copy-id subnetcalc telnet the_silver_searcher thefuck tldr tmux trash unrar unzip watch wget youtube-dl rtv vim exa
 ```
 ***
 
-#### <u>Python</u>
+### <u>Python</u>
 
 A interpreted, high-level, general-purpose programming language. There are many ways to install Python, but I found this to be best. 
 
@@ -143,7 +143,7 @@ $ pip install --upgrade pip
 ```
 ***
 
-#### <u>Virtualenv</u>
+### <u>Virtualenv</u>
 
 A tool to create isolated virtual Python environments. 
 
@@ -152,7 +152,7 @@ $ pip install virtualenv
 ```
 ***
 
-#### <u>Pipenv</u>
+### <u>Pipenv</u>
 
 A packaging tool for Python that solves some common problems associated with the typical workflow using pip, virtualenv, and the good old requirements.txt. 
 
@@ -161,7 +161,7 @@ $ brew install pipenv
 ```
 ***
 
-#### <u>Ruby</u>
+### <u>Ruby</u>
 
 A interpreted, high-level, general-purpose programming language. 
 
@@ -175,7 +175,7 @@ $ ruby -v
 ```
 ***
 
-#### <u>Rails</u>
+### <u>Rails</u>
 
 A web-application framework that includes everything needed to create database-backed web applications. 
 
@@ -186,7 +186,7 @@ $ rails -v
 ```
 ***
 
-#### <u>MySQL</u>
+### <u>MySQL</u>
 
 A open-source relational database management system. 
 
@@ -200,7 +200,7 @@ Starting: `brew services start mysql`
 
 ***
 
-#### <u>PostgreSQL</u>
+### <u>PostgreSQL</u>
 
 A open-source relational database management system emphaszing extensibility and technical standards compliance.
 
@@ -221,7 +221,7 @@ Create actual Database: `createdb mydatabasename` , `dropdb mydatabasename`
 
 ***
 
-#### <u>Node.js</u>
+### <u>Node.js</u>
 
 A open-source, cross-platform,  Javascript runtime enviornment that executes Javascript code outside of a browser. 
 
@@ -230,7 +230,7 @@ $ brew install node
 ```
 ***
 
-#### <u>Go</u>
+### <u>Go</u>
 
 A statically typed, complied programming language designed at Google. Similar to C, but with memory safety, garbarge collection, structural typing, and CSP-style concurrency. 
 
@@ -239,7 +239,7 @@ $ brew install go
 ```
 ***
 
-#### <u>AWSCLI</u>
+### <u>AWSCLI</u>
 
 A unified tool to manage your AWS service. 
 
@@ -248,7 +248,7 @@ $ brew install awscli
 ```
 ***
 
-#### <u>Docker</u>
+### <u>Docker</u>
 
 A set of platform as a service products that uses OS-level virtualization to deliver software in packages called containers. 
 
@@ -260,7 +260,7 @@ $ brew cask install virtualbox
 ```
 ***
 
-#### <u>Java JDK 8</u>
+### <u>Java JDK 8</u>
 
 A development enviornment for building applications and components using the Java programming language.
 
@@ -271,7 +271,7 @@ $ brew install maven
 ```
 ***
 
-#### <u>Aircrack-ng</u>
+### <u>Aircrack-ng</u>
 
 A network suite of tools to access WiFi network security. 
 
@@ -296,7 +296,7 @@ Cap File Location: `/tmp/airportSniff*.cap`
 
 ***
 
-#### <u>Apache</u>
+### <u>Apache</u>
 
 A open-source cross-platform web server software.
 
@@ -318,7 +318,7 @@ To verify, go to browser and type "`localhost`" in search bar. You should see `"
 
 ***
 
-#### <u>Sublime Text 3</u>
+### <u>Sublime Text 3</u>
 
 A source code editor with a Python application programming interface. Supports many programming languages. 
 
@@ -332,6 +332,7 @@ Add the following lines to `/etc/hosts`:
 ```
 
 License Key for Sublime Text 3:  (Working as of 03-05-2020)
+Please buy product if you like it!
 
 ```
 ----- BEGIN LICENSE ----
@@ -383,7 +384,7 @@ Settings for Sublime:
 ```
 ***
 
-#### <u>Visual Studio Code</u>
+### <u>Visual Studio Code</u>
 
 A lightweight code editor with support for many programming languages through extensions.
 
@@ -393,7 +394,7 @@ $ brew cask install visual-studio-code
 
 ***
 
-#### <u>Alias</u>
+### <u>Alias</u>
 
 A list of alias that instucts the shell to replace one string with another string while executing the commands. Like a shortcut. 
 
@@ -416,7 +417,7 @@ alias ....="cd ../../../../"
 
 ***
 
-#### <u>Read and Write NTFS on macOS Catalina</u>
+### <u>Write to NTFS on macOS Catalina</u>
 
 Apple's Mac OS system can always read Windows NTFS formatted drives, but cannot write to them. This method will allow you to write to NTFS formatted drives. 
 
@@ -445,7 +446,7 @@ $ reboot
 
 ***
 
-#### <u>Disable Gatekeeper</u>
+### <u>Disable Gatekeeper</u>
 
 Gatekeeper is a security feature of the macOS operation system. It enforces code signing and verifies the downloaded applications before allowing them to run. Disabling this feature will allow your system to run any downloaded software.
 
@@ -454,7 +455,7 @@ $ sudo spctl --master-disable
 ```
 ***
 
-#### <u>Tweaks</u>
+### <u>Tweaks</u>
 
 Reveal IP address, hostname, OS version, etc. when clicking the clock in the login window:
 
@@ -494,7 +495,7 @@ $ defaults write com.apple.finder EmptyTrashSecurely -bool true
 
 ***
 
-#### <u>Firefox Browser Extensions</u>
+### <u>Firefox Browser Extensions</u>
 
 A list of Firefox extensions that can help with online privacy. 
 
@@ -514,7 +515,7 @@ NoScript
 ```
 ***
 
-#### <u>Firefox Configuration</u>
+### <u>Firefox Configuration</u>
 
 Enter `"about:config"` in the Firefox search bar to access configurations.
 
@@ -543,58 +544,3 @@ browser.sessionstore.privacy_level = 2
 network.IDN_show_punycode = true
 ```
 ***
-
-#### MacOS Applications
-
-```
-Alfred 4 PowerPack
-Amphetamine
-BalenaEtcher
-CleanMyMac X
-Dash
-Dashlane
-Deliveries
-Discord
-Dropbox
-ExpressVPN
-Firefox
-Google Chrome
-Cydia Impactor
-Geekbench 5
-Handbrake
-iStat Menus
-iTerm2
-Macs Fan Control
-Microsoft Office (Word, Excel, Powerpoint, Outlook, Teams, Note)
-Microsoft Remote Desktop
-PDF Expert
-Hemingway Editor
-Ulysses
-Typora
-Slack
-Sublime Text 3
-The Unarchiver
-Wipr
-Transmission BT
-Transmit
-Tower
-VirtualBox
-Visual Studio Code
-VLC Media Player
-VMWare Fusion 11 Pro
-WeChat
-WireShark
-Xcode
-MacVIM
-NetEase Music
-Malus VPN
-Cricut Design Space
-Pixelmator
-Pixelmator Pro
-Tor Browser
-Translate Tab
-WifiSpoof
-Jetbrains
-```
-[JamWiFi](http://macheads101.com/pages/downloads/mac/JamWiFi.app.zip)
-
