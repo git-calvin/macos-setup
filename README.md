@@ -399,6 +399,8 @@ $ brew cask install visual-studio-code
 
 A list of alias that instucts the shell to replace one string with another string while executing the commands. Like a shortcut. 
 
+Add to `~/.zshrc`.
+
 ```
 alias zshconfig="vim ~/.zshrc" 
 alias ls="ls -G" 
