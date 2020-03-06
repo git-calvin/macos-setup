@@ -47,7 +47,7 @@ $ brew install zsh
 
 A community driven framework for managing your Zsh configuration. It comes bundled with thousands of helpful functions, helpers, plugins, and themes.
 
-Offical Github: [OhMyZsh](https://github.com/ohmyzsh/ohmyzsh)
+Offical Github: [Oh My Zsh](https://github.com/ohmyzsh/ohmyzsh)
 
 ```bash
 $ sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
