@@ -595,5 +595,5 @@ Tor Browser
 Translate Tab
 WifiSpoof
 Jetbrains
-'''
+```
 [JamWiFi](http://macheads101.com/pages/downloads/mac/JamWiFi.app.zip)
