@@ -40,6 +40,8 @@ A powerful shell designed for interactive use. Features of bash, tsh, and tcsh a
 ```bash
 $ brew install zsh
 ```
+If needed, make zsh default shell using this command `chsh -s $(which zsh)`
+
 ***
 
 ### <u>Oh My Zsh</u>
