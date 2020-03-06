@@ -518,7 +518,7 @@ NoScript
 
 ### <u>Firefox Configuration</u>
 
-Enter `"about:config"` in the Firefox search bar to access configurations.
+Type `about:config` in the Firefox search bar to edit configurations.
 
 ```
 media.peerconnection.enabled = false 
