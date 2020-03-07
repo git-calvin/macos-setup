@@ -109,7 +109,7 @@ To verify, `ssh -T git@github.com`, you should get message "sucessfully authenti
 
 ### <u>Powerlevel10k</u>
 
-A theme for Zsh. It emphasizes speed, flexibility, and out-of-the-box expierence. With Powerlevel10K, there is no prompt lag. 
+A theme for Zsh. It emphasizes speed, flexibility, and out-of-the-box expierence. With Powerlevel10k, there is no prompt lag. 
 
 Offical Github: [Powerlevel10k](https://github.com/romkatv/powerlevel10k)
 
