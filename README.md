@@ -1,6 +1,5 @@
 # MAC OS SETUP
 
-
 ***
 
 ### <u>iTerm2</u>
@@ -20,6 +19,7 @@ Download the macOS SDK, headers, and build tools. These tools make it easy to in
 ```bash
 $ xcode-select --install
 ```
+
 ***
 
 ### <u>Homebrew</u>
@@ -31,6 +31,11 @@ Offical Site: [Homebrew](https://brew.sh/)
 ```bash
 $ /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 ```
+
+Useful commands:
+
+`brew cleanup` `brew doctor` `brew outdated` `brew upgrade` 
+
 ***
 
 ### <u>Zsh</u>
@@ -40,6 +45,7 @@ A powerful shell designed for interactive use. Features of bash, tsh, and tcsh a
 ```bash
 $ brew install zsh
 ```
+
 If needed, make zsh default shell using this command `chsh -s $(which zsh)`
 
 ***
@@ -65,6 +71,7 @@ Add `zsh-syntax-highlighting`, `zsh-autosuggestions`, `colored-man-pages` in `~/
 ```bash
 $ source ~/.zshrc	
 ```
+
 ***
 
 ### <u>Git</u>
@@ -81,6 +88,7 @@ $ git config --global user.email "your email"
 $ git config --global credential.helper osxkeychain
 $ git config --global color.ui auto
 ```
+
 ***
 
 ### <u>Generate SSH Keys</u>
@@ -124,6 +132,7 @@ To configure, use `p10k configure`
 ```bash
 $ brew install tree fzf ack htop httpd gcc mas neofetch nmap openssh openssl p7zip rsync speedtest-cli ssh-copy-id subnetcalc telnet the_silver_searcher thefuck tldr tmux trash unrar unzip watch wget youtube-dl rtv vim exa
 ```
+
 ***
 
 ### <u>Python</u>
@@ -143,6 +152,7 @@ $ python -V
 $ pip -V
 $ pip install --upgrade pip
 ```
+
 ***
 
 ### <u>Virtualenv</u>
@@ -152,6 +162,7 @@ A tool to create isolated virtual Python environments.
 ```bash
 $ pip install virtualenv
 ```
+
 ***
 
 ### <u>Pipenv</u>
@@ -161,6 +172,7 @@ A packaging tool for Python that solves some common problems associated with the
 ```bash
 $ brew install pipenv
 ```
+
 ***
 
 ### <u>Ruby</u>
@@ -176,6 +188,18 @@ $ rbenv install 2.7.0
 $ rbenv global 2.7.0
 $ ruby -v
 ```
+
+***
+
+### <u>RubyGems & Bundler</u>
+
+Ruby package manager
+
+```bash
+$ which gem
+$ gem install bundler
+```
+
 ***
 
 ### <u>Rails</u>
@@ -187,6 +211,7 @@ $ gem install rails -v 6.0.2.1
 $ rbenv rehash
 $ rails -v
 ```
+
 ***
 
 ### <u>MySQL</u>
@@ -197,9 +222,31 @@ A open-source relational database management system.
 $ brew install mysql
 ```
 
+```bash
+$ unset TMPDIR
+$ mkdir /usr/local/var
+$ mysql_install_db --verbose --user=`whoami` --basedir="$(brew --prefix mysql)" --datadir=/usr/local/var/mysql --tmpdir=/tmp
+```
+
 <u>Usage</u>:
 
-Starting: `brew services start mysql`
+Start: `mysql.server start`
+
+Stop: `mysql.server stop`
+
+Help: `mysql.server --help`
+
+Connect CLI: `mysql -uroot`
+
+***
+
+### <u>MySQL Workbench</u>
+
+GUI client for MySQL
+
+```bash
+$ brew cask install --appdir="/Applications" mysqlworkbench
+```
 
 ***
 
@@ -224,6 +271,22 @@ Create actual Database: `createdb mydatabasename` , `dropdb mydatabasename`
 
 ***
 
+### <u>MongoDB</u>
+
+A popular NoSQL database
+
+```bash
+$ brew install mongo
+```
+
+<u>Usage</u>:
+
+Start: `mongod`
+
+Connect: `mongo`
+
+***
+
 ### <u>Node.js</u>
 
 A open-source, cross-platform,  Javascript runtime enviornment that executes Javascript code outside of a browser. 
@@ -231,6 +294,7 @@ A open-source, cross-platform,  Javascript runtime enviornment that executes Jav
 ```bash
 $ brew install node
 ```
+
 ***
 
 ### <u>Yarn</u>
@@ -250,15 +314,28 @@ A statically typed, complied programming language designed at Google. Similar to
 ```bash
 $ brew install go
 ```
+
 ***
 
-### <u>AWSCLI</u>
+### <u>AWS Command Line Interface</u>
 
-A unified tool to manage your AWS service. 
+A unified tool to manage your AWS service, allowing you to control multiple AWS services from the command line and to automate them through scripts. 
 
 ```bash
 $ brew install awscli
+$ aws configure
 ```
+
+***
+
+### <u>Boto</u>
+
+The official AWS SDK for Python
+
+```bash
+$ pip install boto	
+```
+
 ***
 
 ### <u>Docker</u>
@@ -269,8 +346,8 @@ A set of platform as a service products that uses OS-level virtualization to del
 $ brew install docker
 $ docker --version
 $ brew install docker-machine
-$ brew cask install virtualbox
 ```
+
 ***
 
 ### <u>Java JDK 8</u>
@@ -282,6 +359,7 @@ $ brew tap adoptopenjdk/openjdk
 $ brew cask install adoptopenjdk8
 $ brew install maven
 ```
+
 ***
 
 ### <u>Aircrack-ng</u>
@@ -395,6 +473,7 @@ Settings for Sublime:
 "tab_size": 2, 
 "translate_tabs_to_spaces": true
 ```
+
 ***
 
 ### <u>Visual Studio Code</u>
@@ -403,6 +482,14 @@ A lightweight code editor with support for many programming languages through ex
 
 ```bash
 $ brew cask install visual-studio-code
+```
+
+### <u>VirtualBox</u>
+
+Creates and managew virtual machines. A free solution to VMWare.
+
+```bash
+brew cask install --appdir="/Applications" virtualbox
 ```
 
 ***
@@ -468,6 +555,7 @@ Gatekeeper is a security feature of the macOS operation system. It enforces code
 ```bash
 $ sudo spctl --master-disable
 ```
+
 ***
 
 ### <u>Tweaks</u>
@@ -528,6 +616,7 @@ uBlock Origin
 User-Agent Switcher 
 NoScript
 ```
+
 ***
 
 ### <u>Firefox Configuration</u>
@@ -558,4 +647,3 @@ webgl.disabled = true
 browser.sessionstore.privacy_level = 2 
 network.IDN_show_punycode = true
 ```
-***
