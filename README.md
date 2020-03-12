@@ -558,6 +558,71 @@ $ sudo spctl --master-disable
 
 ***
 
+### <u>Spoof MAC Address</u>
+
+MAC spoofing is a technique for changing a factory-assigned Media Access Control (MAC) address of a network interface on a networked device.
+
+Install SpoofMac:
+
+```bash
+$ brew install spoof-mac
+$ sudo spoof-mac randomize en0
+```
+Change MAC address automatically from boot:
+
+```bash
+$ sudo nano /Library/LaunchDaemons/local.macspoof.plist
+```
+
+Add these lines:
+
+```bash
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+    <dict>
+        <key>Label</key>
+        <string>MacSpoof</string>
+        <key>ProgramArguments</key>
+        <array>
+            <string>/usr/local/bin/spoof-mac.py</string>
+            <string>randomize</string>
+            <string>en0</string>
+        </array>
+        <key>RunAtLoad</key>
+        <true/>
+    </dict>
+</plist>
+```
+Save and exit. Then Reboot.
+
+To test MAC address after boot, use: `spoof-mac list`
+
+***
+
+Alternative: If you don't want to install SpoofMac
+
+Check existing MAC address:
+
+```bash
+$ ifconfig eno0 | grep ether
+```
+
+Generate a random hexadecimal number:
+
+```bash
+$ openssl rand -hex 6 | sed 's/\(..\)/\1:/g; s/.$//'
+```
+
+To change MAC address, use:
+
+```bash
+$ sudo ifconfig en0 ether <MAC_ADDRESS>
+```
+*Note: Replace `<MAC_ADDRESS>` with the one you generated.
+
+***
+
 ### <u>Tweaks</u>
 
 Reveal IP address, hostname, OS version, etc. when clicking the clock in the login window:
