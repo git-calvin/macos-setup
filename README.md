@@ -409,6 +409,80 @@ To verify, go to browser and type "`localhost`" in search bar. You should see `"
 
 ***
 
+### <u>PHP</u>
+
+```bash
+$ brew install php
+$ brew isntall composer
+```
+
+Test:
+
+```bash
+$ mkdir test
+$ cd test
+$ composer require atk4/ui
+$ nano test.php
+```
+
+Paste the following in PHP file:
+
+```php
+<?php
+include 'vendor/autoload.php';
+$app = new atk4\ui\App('PHP-test');
+$app->initLayout('Centered');
+$app->add(['Label', 'Your PHP Version:', 'big blue', 'detail'=>phpversion()]);
+```
+
+Save and exit.
+
+```bash
+$ php -S 127.0.0.1:8080
+```
+
+Now, go on browser and navigate to: `http://127.0.0.1:8080/test.php`
+
+***
+
+### <u>Setting up php-fpm with Nginx</u>
+
+```bash
+$ brew install nginx
+$ sudo brew services start nginx
+$ brew services start php
+```
+
+Edit the server section from `/usr/local/etc/nginx/nginx.conf`
+
+```bash
+server {
+  listen       80;
+  server_name  localhost;
+  client_max_body_size 20M;
+  root   /Users/<YOUR_USER_NAME>/Sites/;
+  location / {
+    index  index.php index.html index.htm;
+  }
+  location = /yourapp/ {
+    # Simpler version of mod_rewrite catch-all approach
+    index index.php;
+  }
+  location /otherapp/ {
+    # Actual URL rewriting
+    rewrite ^/[^/]*/(.*) /otherapp/index.php?page=$1;
+  }
+  location ~ \.php$ {
+    fastcgi_pass   127.0.0.1:9000;
+    fastcgi_index  index.php;
+    # goes on same line:
+    fastcgi_param  SCRIPT_FILENAME /Users/rw/Sites/$fastcgi_script_name;
+    include        fastcgi_params;
+  }
+}
+```
+***
+
 ### <u>Sublime Text 3</u>
 
 A source code editor with a Python application programming interface. Supports many programming languages. 
