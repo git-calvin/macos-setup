@@ -342,11 +342,7 @@ $ pip install boto
 
 A set of platform as a service products that uses OS-level virtualization to deliver software in packages called containers. 
 
-```bash
-$ brew install docker
-$ docker --version
-$ brew install docker-machine
-```
+Download [Docker for Mac](https://hub.docker.com/editions/community/docker-ce-desktop-mac/)
 
 ***
 
