@@ -412,7 +412,7 @@ To verify, go to browser and type "`localhost`" in search bar. You should see `"
 ### <u>PHP</u>
 
 ```bash
-$ brew install php
+$ brew install php@7.4
 $ brew isntall composer
 ```
 
