@@ -186,6 +186,7 @@ $ source ~/.zshrc
 $ rbenv install -l
 $ rbenv install 2.7.0
 $ rbenv global 2.7.0
+$ exec $SHELL
 $ ruby -v
 ```
 
