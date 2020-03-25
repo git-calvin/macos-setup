@@ -29,7 +29,7 @@ Homebrew installs [the stuff](https://formulae.brew.sh/formula/) you need that A
 Offical Site: [Homebrew](https://brew.sh/)
 
 ```bash
-$ /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+$ /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 ```
 
 Useful commands:
@@ -44,6 +44,8 @@ A powerful shell designed for interactive use. Features of bash, tsh, and tcsh a
 
 ```bash
 $ brew install zsh
+$ chmod 755 /usr/local/share/zsh
+$ chmod 755 /usr/local/share/zsh/site-functions
 ```
 
 If needed, make zsh default shell using this command `chsh -s $(which zsh)`
