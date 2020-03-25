@@ -100,6 +100,11 @@ A SSH key is an access credential in the SSH protocol. Its function is similar t
 ```bash
 $ ssh-keygen -o -a 256 -t ed25519
 ```
+Options:
+
+`-a` rounds
+`-o` openssh 
+`-t` type
 
 To copy public key to a particular server, use `ssh-copy-id <user@hostname>`
 
