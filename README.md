@@ -741,6 +741,14 @@ $ defaults write com.apple.finder EmptyTrashSecurely -bool true
 
 ***
 
+### CTF Tools
+
+``` bash
+$ brew install bfg binutils binwalk cifer dex2jar dns2tcp fcrackzip foremost hashpump hydra john knock netpbm pngcheck socat sqlmap tcpflow tcpreplay tcptrace xz ucspi-tcp
+```
+
+***
+
 ### <u>Firefox Browser Extensions</u>
 
 A list of Firefox extensions that can help with online privacy. 
