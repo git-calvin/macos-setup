@@ -84,6 +84,14 @@ A distributed version control system for tracking changes in souce code during s
 $ brew install git
 ```
 
+Git extras:
+
+```bash
+brew install git-lfs git-flow git-extras
+```
+
+Git setup:
+
 ```bash
 $ git config --global user.name "your username"
 $ git config --global user.email "your email"
