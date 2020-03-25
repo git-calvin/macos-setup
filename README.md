@@ -149,8 +149,8 @@ A interpreted, high-level, general-purpose programming language. There are many 
 ```bash
 $ brew install pyenv
 $ pyenv install -l
-$ pyenv install 3.8.1
-$ pyenv global 3.8.1
+$ pyenv install 3.8.2
+$ pyenv global 3.8.2
 $ pyenv version
 $ echo -e 'if command -v pyenv 1>/dev/null 2>&1; then\n  eval "$(pyenv init -)"\nfi' >> ~/.zshrc
 $ exec $SHELL
