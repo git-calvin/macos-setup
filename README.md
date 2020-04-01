@@ -142,6 +142,16 @@ To configure, use `p10k configure`
 
 ***
 
+### Optional MOTD
+
+```bash
+$ brew install cowsay lolcat fortune
+$ vim ~/.zprofile
+```
+Put `fortune | cowsay | lolcat` in the profile. Save and exit. 
+
+***
+
 ### <u>Homebrew Packages</u>
 
 ```bash
