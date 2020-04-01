@@ -12,6 +12,14 @@ Download [iTerm2 Themes](https://github.com/mbadolato/iTerm2-Color-Schemes/zipba
 
 ***
 
+### Nerd Fonts
+
+Nerd Fonts is a project that patches developer targeted fonts with a high number of glyphs (icons).
+
+Download [NerdFonts](https://github.com/ryanoasis/nerd-fonts/archive/master.zip)
+
+***
+
 ### <u>Command Line Tools for Xcode</u>
 
 Download the macOS SDK, headers, and build tools. These tools make it easy to install open source software or develop on UNIX.
@@ -142,7 +150,9 @@ To configure, use `p10k configure`
 
 ***
 
-### Optional MOTD
+### Optional MOTD (Message of the Day)
+
+A welcome message shown to a user upon the terminal login
 
 ```bash
 $ brew install cowsay lolcat fortune
@@ -760,6 +770,8 @@ $ defaults write com.apple.finder EmptyTrashSecurely -bool true
 ***
 
 ### CTF Tools
+
+A collection of Capture the Flag (CTF) Tools
 
 ``` bash
 $ brew install bfg binutils binwalk cifer dex2jar dns2tcp fcrackzip foremost hashpump hydra john knock netpbm pngcheck socat sqlmap tcpflow tcpreplay tcptrace xz ucspi-tcp
