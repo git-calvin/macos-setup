@@ -4,7 +4,7 @@
 
 ### Check for updates
 
-Checks for avaliable macOS software updates.
+Checks and install all avaliable macOS software updates.
 
 ```bash
 $ softwareupdate -ia
@@ -30,7 +30,7 @@ Download [NerdFonts](https://github.com/ryanoasis/nerd-fonts/archive/master.zip)
 
 ***
 
-### <u>Command Line Tools for Xcode</u>
+### <u>Install Command Line Tools without Xcode</u>
 
 Download the macOS SDK, headers, and build tools. These tools make it easy to install open source software or develop on UNIX.
 
@@ -53,6 +53,12 @@ $ /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/
 Useful commands:
 
 `brew cleanup` `brew doctor` `brew outdated` `brew upgrade` 
+
+To uninstall Homebrew:
+
+```bash
+$ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/uninstall)"
+```
 
 ***
 
@@ -843,3 +849,28 @@ webgl.disabled = true
 browser.sessionstore.privacy_level = 2 
 network.IDN_show_punycode = true
 ```
+
+***
+
+### macOS Appearance 
+
+Reduce Transparency
+```bash
+$ defaults write com.apple.universalaccess reduceTransparency -bool true
+```
+Restore Default Transparency
+```bash
+$ defaults write com.apple.universalaccess reduceTransparency -bool false
+```
+
+***
+
+### Save to Disk by Default
+
+Sets default save target to local disk instead of iCloud
+
+```bash
+$ defaults write -g NSDocumentSaveNewDocumentsToCloud -bool false
+```
+
+***
