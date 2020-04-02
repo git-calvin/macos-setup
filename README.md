@@ -28,7 +28,9 @@ Nerd Fonts is a project that patches developer targeted fonts with a high number
 
 Offical Github: [NerdFonts](https://github.com/ryanoasis/nerd-fonts)
 
-Download [NerdFonts](https://github.com/ryanoasis/nerd-fonts/archive/master.zip)
+Direct Download: [NerdFonts](https://github.com/ryanoasis/nerd-fonts/archive/master.zip)
+
+Unzip and use `./install` script to install to your system.
 
 ***
 
