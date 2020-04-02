@@ -1,79 +1,49 @@
-### Recommended Applications
+### My Applications
 
 ***
 
-
-
 ```
-Alfred 4 w/ Power Pack
+Adguard for Safari
+Alfred 4
 Amphetamine
-CleanMyMac X
-Dash
-Dashlane
-Deliveries
-Dropbox
-Handbrake
-Cydia Impactor
-Geekbench 5
-Balena Etcher
-iStat Menus
-iTerm2
-Macs Fan Control
-Microsoft Remote Desktop
-PDF Expert
-The Unarchiver
-Transmission BT
-Transmit
-Tower
-VLC Media Player
-WireShark
+Burp Suite
+Clion
 Cricut Design Space
-Tor Browser
-Translate Tab
-WifiSpoof
-Wipr
-JamWiFi
-```
-
-```
+Dash
+Deliveries
 Discord
-Slack
-WeChat
-```
-
-```
-Firefox
-Google Chrome
-```
-
-```
+Docker
+Dropbox
 ExpressVPN
+Firefox
+Impactor
+IntellijIDEA
+iTerm
 Malus
-```
-
-```
-Microsoft Office (Word, Excel, Note, Powerpoint, Outlook, Teams)
-Hemingway Editor
-Ulysses
-Sublime Text 3
-Visual Studio Code
-Xcode
-MacVIM
-Typora
-```
-
-```
-Virtualbox w/ Extensions
-VMWare Fusion 11 Pro
-```
-
-```
-Netease Music
-Spotify
-```
-
-```
+Mate Translate
+Microsoft Office
+Microsoft Remote Desktop
+Nova
+PDF Expert
 Pixelmator
 Pixelmator Pro
+Prison Architect
+PyCharm
+Apple Remote Desktop
+Slack
+Sublime Text
+The Unarchiver
+Transmission 
+Transmit
+Twitter
+Typora
+Ulysses
+Hemingway Editor
+VirtualBox
+Visual Studio Code
+VLC Media Player
+VMWare Fusion
+WeChat
+Xcode
 ```
-
+***
