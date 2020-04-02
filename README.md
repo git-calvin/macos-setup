@@ -76,7 +76,7 @@ $ chmod 755 /usr/local/share/zsh
 $ chmod 755 /usr/local/share/zsh/site-functions
 ```
 
-If needed, make zsh default shell using this command `chsh -s $(which zsh)`
+If needed, make zsh default shell using this command: `chsh -s $(which zsh)`
 
 ***
 
