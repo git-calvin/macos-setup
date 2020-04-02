@@ -347,12 +347,6 @@ $ brew install mongodb-community@4.2
 
 To start MongoDB: `brew services start mongodb`
 
-<u>Usage</u>:
-
-Start: `mongod`
-
-Connect: `mongo`
-
 ***
 
 ### <u>Node.js</u>
