@@ -2,6 +2,16 @@
 
 ***
 
+### Check for updates
+
+Checks for avaliable macOS software updates.
+
+```bash
+$ softwareupdate -ia
+```
+
+***
+
 ### <u>iTerm2</u>
 
 iTerm2 brings the terminal into the modern age with features you never knew you always wanted. 
@@ -62,7 +72,7 @@ If needed, make zsh default shell using this command `chsh -s $(which zsh)`
 
 ### <u>Oh My Zsh</u>
 
-A community driven framework for managing your Zsh configuration. It comes bundled with thousands of helpful functions, helpers, plugins, and themes.
+Oh My Zsh is a open source framework built on top of zsh for managing it's configuration. This framework will allow us to use themes, plugins, helpers, functions and many other cool things.
 
 Offical Github: [Oh My Zsh](https://github.com/ohmyzsh/ohmyzsh)
 
@@ -150,15 +160,20 @@ To configure, use `p10k configure`
 
 ***
 
-### Optional MOTD (Message of the Day)
+### (Optional) MOTD (Message of the Day)
 
-A welcome message shown to a user upon the terminal login
+A welcome message shown to a user upon the terminal login. 
 
 ```bash
 $ brew install cowsay lolcat fortune
+```
+
+Edit the `~/.zprofile`
+
+```bash
 $ vim ~/.zprofile
 ```
-Put `fortune | cowsay | lolcat` in the profile. Save and exit. 
+Add `fortune | cowsay | lolcat`. Save and exit. 
 
 ***
 
