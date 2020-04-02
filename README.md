@@ -345,6 +345,8 @@ $ brew tap mongodb/brew
 $ brew install mongodb-community@4.2
 ```
 
+To start MongoDB: `brew services start mongodb`
+
 <u>Usage</u>:
 
 Start: `mongod`
