@@ -26,7 +26,7 @@ Download: [iTerm2 Themes](https://github.com/mbadolato/iTerm2-Color-Schemes/zipb
 
 Nerd Fonts is a project that patches developer targeted fonts with a high number of glyphs (icons).
 
-Offical Github: [NerdFonts](https://github.com/ryanoasis/nerd-fonts)
+Official Github: [NerdFonts](https://github.com/ryanoasis/nerd-fonts)
 
 Direct Download: [NerdFonts](https://github.com/ryanoasis/nerd-fonts/archive/master.zip)
 
@@ -48,7 +48,7 @@ $ xcode-select --install
 
 Homebrew installs [the stuff](https://formulae.brew.sh/formula/) you need that Apple didn't. 
 
-Offical Site: [Homebrew](https://brew.sh/)
+Official Site: [Homebrew](https://brew.sh/)
 
 ```bash
 $ /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
@@ -84,7 +84,7 @@ If needed, make zsh default shell using this command: `chsh -s $(which zsh)`
 
 Oh My Zsh is a open source framework built on top of zsh for managing it's configuration. This framework will allow us to use themes, plugins, helpers, functions and many other cool things.
 
-Offical Github: [Oh My Zsh](https://github.com/ohmyzsh/ohmyzsh)
+Official Github: [Oh My Zsh](https://github.com/ohmyzsh/ohmyzsh)
 
 ```bash
 $ sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
@@ -154,7 +154,7 @@ To verify, `ssh -T git@github.com`, you should get message "sucessfully authenti
 
 A theme for Zsh. It emphasizes speed, flexibility, and out-of-the-box expierence. With Powerlevel10k, there is no prompt lag. 
 
-Offical Github: [Powerlevel10k](https://github.com/romkatv/powerlevel10k)
+Official Github: [Powerlevel10k](https://github.com/romkatv/powerlevel10k)
 
 ```bash
 $ git clone --depth=1 https://github.com/romkatv/powerlevel10k.git $ZSH_CUSTOM/themes/powerlevel10k
@@ -170,13 +170,17 @@ To configure, use `p10k configure`
 
 ***
 
-### (Optional) MOTD (Message of the Day)
+### MOTD (Message of the Day)
 
 A welcome message shown to a user upon the terminal login. 
 
 ```bash
 $ brew install cowsay lolcat fortune
 ```
+
+`cowsay` generates ASCII pictures of a cow with a message.
+`lolcat` is a utility which adds a rainbow coloring to the cat like command. 
+`fortune` displays a pseudo-random message from a database of quotations. 
 
 Edit the `~/.zprofile` using the following command:
 
