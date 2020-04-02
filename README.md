@@ -16,9 +16,9 @@ $ softwareupdate -ia
 
 iTerm2 brings the terminal into the modern age with features you never knew you always wanted. 
 
-Download [iTerm2](https://iterm2.com/downloads/stable/latest)
+Download: [iTerm2](https://iterm2.com/downloads/stable/latest)
 
-Download [iTerm2 Themes](https://github.com/mbadolato/iTerm2-Color-Schemes/zipball/master)
+Download: [iTerm2 Themes](https://github.com/mbadolato/iTerm2-Color-Schemes/zipball/master)
 
 ***
 
@@ -138,9 +138,9 @@ Options:
 `-o` openssh 
 `-t` type
 
-To copy public key to a particular server, use `ssh-copy-id <user@hostname>`
+To copy public key to a particular server, use: `ssh-copy-id <user@hostname>`
 
-To setup Github, copy and paste SSH key to Github website. use `pbcopy < ~/.ssh/id_ed25519.pub` to copy to clipboard.
+To setup Github, copy and paste SSH key to Github website. use: `pbcopy < ~/.ssh/id_ed25519.pub` to copy to clipboard.
 
 To verify, `ssh -T git@github.com`, you should get message "sucessfully authenticated". 
 
@@ -174,12 +174,12 @@ A welcome message shown to a user upon the terminal login.
 $ brew install cowsay lolcat fortune
 ```
 
-Edit the `~/.zprofile`
+Edit the `~/.zprofile` using the following command:
 
 ```bash
 $ vim ~/.zprofile
 ```
-Add `fortune | cowsay | lolcat`. Save and exit. 
+Add: `fortune | cowsay | lolcat`. Save and exit. 
 
 ***
 
@@ -399,7 +399,7 @@ $ pip install boto
 
 A set of platform as a service products that uses OS-level virtualization to deliver software in packages called containers. 
 
-Download [Docker for Mac](https://hub.docker.com/editions/community/docker-ce-desktop-mac/)
+Download: [Docker for Mac](https://hub.docker.com/editions/community/docker-ce-desktop-mac/)
 
 ***
 
@@ -540,9 +540,9 @@ server {
 
 A source code editor with a Python application programming interface. Supports many programming languages. 
 
-Download [Sublime Text 3](https://www.sublimetext.com)
+Download: [Sublime Text 3](https://www.sublimetext.com)
 
-Add the following lines to `/etc/hosts`:
+To block updates, add the following lines to `/etc/hosts`:
 
 ```
 127.0.0.1 license.sublimehq.com
@@ -625,7 +625,7 @@ brew cask install --appdir="/Applications" virtualbox
 
 A list of alias that instucts the shell to replace one string with another string while executing the commands. Like a shortcut. 
 
-Add to `~/.zshrc`.
+Add the following to `~/.zshrc` using the command `vim ~/.zshrc`:
 
 ```
 alias zshconfig="vim ~/.zshrc" 
@@ -655,7 +655,7 @@ $ brew cask install osxfuse
 $ brew install ntfs-3g
 ```
 
-Reboot into Recovery Mode (⌘-R). Open terminal and enter following command
+Reboot into Recovery Mode (⌘-R). Open terminal and enter following command:
 
 ```bash
 $ csrutil disable
@@ -663,6 +663,8 @@ $ diskutil list
 ```
 
 Look for the  `(synthesized)` section with the name `Macintosh HD - Data` , see `Identifier` similar to `disk2s1`.
+
+Replace your `Identifier` in place of `disk2s1` on the following commands.
 
 ```bash
 $ diskutil apfs unlockVolume disk2s1 
@@ -821,7 +823,7 @@ NoScript
 
 ***
 
-### <u>Firefox Configuration</u>
+### <u>Firefox Privacy Focused Configuration</u>
 
 Type `about:config` in the Firefox search bar to edit configurations.
 
@@ -854,11 +856,11 @@ network.IDN_show_punycode = true
 
 ### macOS Appearance 
 
-Reduce Transparency
+Reduce Transparency:
 ```bash
 $ defaults write com.apple.universalaccess reduceTransparency -bool true
 ```
-Restore Default Transparency
+Restore Default Transparency:
 ```bash
 $ defaults write com.apple.universalaccess reduceTransparency -bool false
 ```
