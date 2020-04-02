@@ -4,7 +4,7 @@
 ***
 
 ### Check macOS for Software Updates
-   * [Check For updates](#check-for-updates)  
+   * [Check for updates](#check-for-updates)  
 
 ### Setting up the Terminal
    * [Download iTerm2](#iterm2)
