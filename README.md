@@ -1,8 +1,53 @@
 # MAC OS SETUP
 
-[Check For Update](#check-for-updates)  
-[Firefox Privacy Focused Configuration](#firefox-privacy-focused-configuration)  
-
+## Table of Contents
+***
+1. [Check For Update](#check-for-updates)  
+2. [iTerm2](#iterm2)
+3. [Nerd Fonts](#nerd-fonts)
+4. [Install Command Line Tools](#install-command-line-tools-without-xcode)
+5. [Homebrew](#homebrew)
+6. [Zsh](#zsh)
+7. [Oh My Zsh](#oh-my-zsh)
+8. [Git](#git)
+9. [Generate SSH Keys](#generate-ssh-keys)
+10. [Powerlevel10K](#powerlevel10k)
+11. [Message of the Day](#message-of-the-day)
+12. [Homebrew Packages](#homebrew-packages)
+13. [Python](#python)
+14. [Virtualenv](#virtualenv)
+15. [Pipenv](#pipenv)
+16. [Ruby](#ruby)
+17. [RubyGems & Bundler](#rubygems-and-bundler)
+18. [Rails](#rails)
+19. [MySQL](#mysql)
+20. [MySQL Workbench](#mysql-workbench)
+21. [PostgreSQL](#postgresql)
+22. [MongoDB](#mongodb)
+23. [Node.js](#node-js)
+24. [Yarn](#yarn)
+25. [Go](#go)
+26. [AWS Command Line](#aws-command-line-interface)
+27. [Boto](#boto)
+28. [Docker](#docker)
+29. [Java JDK 8](#java-jdk-8)
+30. [Aircrack-ng](#aircrack-ng)
+31. [Apache](#apache)
+32. [PHP](#php)
+33. [Setting up php-fpm with Nginx](#setting-up-php-fpm-with-nginx)
+33. [Sublime Text 3](#sublime-text-3)
+34. [Visual Studio Code](#visual-studio-code)
+35. [VirtualBox](#virtualbox)
+36. [Alias](#alias)
+37. [Write to NTFS on macOS Catalina](#write-to-ntfs-on-macos-catalina)
+38. [Disable Gatekeeper](#disable-gatekeeper)
+39. [Spoof MAC Address](#spoof-mac-address)
+40. [Tweaks](#tweaks)
+41. [Capture the Flag Tools](#ctf-tools)
+42. [Firefox Browser Extensions](#firefox-browser-extensions)
+43. [Firefox Privacy Focused Config](#firefox-privacy-focused-configuration)
+44. [MacOS Appearance](#macos-appearance)
+45. [Save to Disk by Default](#save-to-disk-by-default)
 
 ***
 
@@ -174,7 +219,7 @@ To configure, use `p10k configure`
 
 ***
 
-### MOTD (Message of the Day)
+### Message of the Day
 
 A welcome message shown to a user upon the terminal login. 
 
@@ -260,7 +305,7 @@ $ ruby -v
 
 ***
 
-### <u>RubyGems & Bundler</u>
+### <u>RubyGems and Bundler</u>
 
 Ruby package manager
 
@@ -353,7 +398,7 @@ To start MongoDB: `brew services start mongodb`
 
 ***
 
-### <u>Node.js</u>
+### <u>Node JS</u>
 
 A open-source, cross-platform,  Javascript runtime enviornment that executes Javascript code outside of a browser. 
 
@@ -507,7 +552,7 @@ Now, go on browser and navigate to: `http://127.0.0.1:8080/test.php`
 
 ***
 
-### <u>Setting up php-fpm with Nginx</u>
+### <u>Setting up php fpm with Nginx</u>
 
 ```bash
 $ brew install nginx
