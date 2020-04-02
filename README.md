@@ -2,54 +2,74 @@
 
 ## Table of Contents
 ***
-1. [Check For Update](#check-for-updates)  
-2. [iTerm2](#iterm2)
-3. [Nerd Fonts](#nerd-fonts)
-4. [Install Command Line Tools](#install-command-line-tools-without-xcode)
-5. [Homebrew](#homebrew)
-6. [Zsh](#zsh)
-7. [Oh My Zsh](#oh-my-zsh)
-8. [Git](#git)
-9. [Generate SSH Keys](#generate-ssh-keys)
-10. [Powerlevel10K](#powerlevel10k)
-11. [Message of the Day](#message-of-the-day)
-12. [Homebrew Packages](#homebrew-packages)
-13. [Python](#python)
-14. [Virtualenv](#virtualenv)
-15. [Pipenv](#pipenv)
-16. [Ruby](#ruby)
-17. [RubyGems & Bundler](#rubygems-and-bundler)
-18. [Rails](#rails)
-19. [MySQL](#mysql)
-20. [MySQL Workbench](#mysql-workbench)
-21. [PostgreSQL](#postgresql)
-22. [MongoDB](#mongodb)
-23. [Node.js](#node-js)
-24. [Yarn](#yarn)
-25. [Go](#go)
-26. [AWS Command Line](#aws-command-line-interface)
-27. [Boto](#boto)
-28. [Docker](#docker)
-29. [Java JDK 8](#java-jdk-8)
-30. [Aircrack-ng](#aircrack-ng)
-31. [Apache](#apache)
-32. [PHP](#php)
-33. [Setting up php-fpm with Nginx](#setting-up-php-fpm-with-nginx)
-33. [Sublime Text 3](#sublime-text-3)
-34. [Visual Studio Code](#visual-studio-code)
-35. [VirtualBox](#virtualbox)
-36. [Alias](#alias)
-37. [Write to NTFS on macOS Catalina](#write-to-ntfs-on-macos-catalina)
-38. [Disable Gatekeeper](#disable-gatekeeper)
-39. [Spoof MAC Address](#spoof-mac-address)
-40. [Tweaks](#tweaks)
-41. [Capture the Flag Tools](#ctf-tools)
-42. [Firefox Browser Extensions](#firefox-browser-extensions)
-43. [Firefox Privacy Focused Config](#firefox-privacy-focused-configuration)
-44. [MacOS Appearance](#macos-appearance)
-45. [Save to Disk by Default](#save-to-disk-by-default)
 
-***
+### Check macOS for Software Updates
+   * [Check For updates](#check-for-updates)  
+
+### Setting up the Terminal
+   * [Download iTerm2](#iterm2)
+   * [Download Nerd Fonts](#nerd-fonts)
+   * [Install macOS Command Line Tools](#install-command-line-tools-without-xcode)
+   * [Install Homebrew](#homebrew)
+   * [Install Zsh](#zsh)
+   * [Install Oh My Zsh](#oh-my-zsh)
+   * [Install Git](#git)
+   * [Install Powerlevel10K](#powerlevel10k)
+   * [Setup Message of the Day](#message-of-the-day)
+   * [Generate SSH Keys](#generate-ssh-keys)
+   * [Useful Aliases](#alias)
+   
+### Installing Homebrew Packages
+   * [Install Homebrew Packages](#homebrew-packages)
+
+### Setting up a Development Enviornment
+   * [Install Python](#python)
+   * [Install Virtualenv](#virtualenv)
+   * [Install Pipenv](#pipenv)
+   * [Install Ruby](#ruby)
+   * [Update RubyGems and Bundler](#rubygems-and-bundler)
+   * [Install Rails](#rails)
+   * [Install MySQL](#mysql)
+   * [Install MySQL Workbench](#mysql-workbench)
+   * [Install PostgreSQL](#postgresql)
+   * [Install MongoDB](#mongodb)
+   * [Install Node.js](#node-js)
+   * [Install Yarn](#yarn)
+   * [Install Go](#go)
+   * [Install AWS Command Line](#aws-command-line-interface)
+   * [Install Boto](#boto)
+   * [Install Docker](#docker)
+   * [Install Java JDK 8](#java-jdk-8)
+   * [Setup Apache Server](#apache)
+   * [Install PHP](#php)
+   * [Setting up php-fpm with Nginx](#setting-up-php-fpm-with-nginx)
+   
+### Pentesting Tools
+   * [Install Aircrack-ng](#aircrack-ng)
+   * [Capture the Flag Tools](#ctf-tools)
+   * [Install VirtualBox](#virtualbox)
+
+### Setting up Text Editors
+   * [Install Sublime Text 3](#sublime-text-3)
+   * [Install Visual Studio Code](#visual-studio-code)
+   
+### Tweaks for macOS
+   * [Write to NTFS on macOS Catalina](#write-to-ntfs-on-macos-catalina)
+   * [Disable Gatekeeper](#disable-gatekeeper)
+   * [Spoof MAC Address](#spoof-mac-address)
+   * [Tweaks](#tweaks)
+   * [Tweak macOS Appearance](#macos-appearance)
+   * [Save to Disk by Default](#save-to-disk-by-default)
+
+### Firefox Tweaks
+   * [Firefox Browser Extensions (Online Privacy)](#firefox-browser-extensions)
+   * [Firefox Configurations (Online Privacy)](#firefox-privacy-focused-configuration)
+   
+***  
+  
+  
+  
+  
 
 ### Check for updates
 
