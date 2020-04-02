@@ -1,5 +1,9 @@
 # MAC OS SETUP
 
+[Check For Update](#check-for-updates)  
+[Firefox Privacy Focused Configuration](#firefox-privacy-focused-configuration)  
+
+
 ***
 
 ### Check for updates
