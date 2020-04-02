@@ -26,6 +26,8 @@ Download: [iTerm2 Themes](https://github.com/mbadolato/iTerm2-Color-Schemes/zipb
 
 Nerd Fonts is a project that patches developer targeted fonts with a high number of glyphs (icons).
 
+Offical Github: [NerdFonts](https://github.com/ryanoasis/nerd-fonts)
+
 Download [NerdFonts](https://github.com/ryanoasis/nerd-fonts/archive/master.zip)
 
 ***
