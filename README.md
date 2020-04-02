@@ -341,7 +341,8 @@ Create actual Database: `createdb mydatabasename` , `dropdb mydatabasename`
 A popular NoSQL database
 
 ```bash
-$ brew install mongo
+$ brew tap mongodb/brew
+$ brew install mongodb-community@4.2
 ```
 
 <u>Usage</u>:
