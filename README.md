@@ -1,6 +1,4 @@
-# MAC OS SETUP
-
-## Table of Contents
+# Table of Contents
 ***
 
 ### Check macOS for Software Updates
