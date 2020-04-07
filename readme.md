@@ -139,8 +139,6 @@ A powerful shell designed for interactive use. Features of bash, tsh, and tcsh a
 
 ```bash
 $ brew install zsh
-$ chmod 755 /usr/local/share/zsh
-$ chmod 755 /usr/local/share/zsh/site-functions
 ```
 
 If needed, make zsh default shell using this command: `chsh -s $(which zsh)`
@@ -155,6 +153,8 @@ Official Github: [Oh My Zsh](https://github.com/ohmyzsh/ohmyzsh)
 
 ```bash
 $ sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+$ chmod 755 /usr/local/share/zsh
+$ chmod 755 /usr/local/share/zsh/site-functions
 ```
 
 ```bash
