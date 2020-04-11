@@ -827,7 +827,6 @@ $ sudo ifconfig en0 ether <MAC_ADDRESS>
 ### <u>Tweaks</u>
 
 Reset dock back to default:
-
 ```bash
 $ defaults delete com.apple.dock; killall Dock
 ```
@@ -840,61 +839,51 @@ $ defaults write com.apple.screencapture type -string "png"
 
 
 Avoid creating .DS_Store ﬁles on network or USB volumes:
-
 ```bash
 $ defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true
 ```
 
 Finder: show all ﬁlename extensions:
-
 ```bash
 $ defaults write NSGlobalDomain AppleShowAllExtensions -bool true
 ```
 
 Finder: show hidden ﬁles by default:
-
 ```bash
 $ defaults write com.apple.finder AppleShowAllFiles -bool true
 ```
 
 Finder: show status bar:
-
 ```bash
 $ defaults write com.apple.finder ShowStatusBar -bool true
 ```
 
 Empty Trash securely by default:
-
 ```bash
 $ defaults write com.apple.finder EmptyTrashSecurely -bool true
 ```
 
 Full Path in Finder Title Bar: 
-
 ```bash
 $ defaults write com.apple.finder _FXShowPosixPathInTitle -bool YES;
 ```
 
 Automatically quit printer app once print jobs has been completed:
-
 ```bash
 $ defaults write com.apple.print.PrintingPrefs "Quit When Finished" -bool true
 ```
 
 Disable the “Are you sure you want to open this application?” dialog message:
-
 ```bash
 defaults write com.apple.LaunchServices LSQuarantine -bool false
 ```
 
 Reveal IP address, hostname, OS version, etc. when clicking the clock in the login window
-
 ```bash
 $ sudo defaults write /Library/Preferences/com.apple.loginwindow AdminHostInfo HostName
 ```
 
 Don't send search queries to Apple in Safari:
-
 ```bash
 $ defaults write com.apple.Safari UniversalSearchEnabled -bool false
 $ defaults write com.apple.Safari SuppressSearchSuggestions -bool true
@@ -998,16 +987,14 @@ $ defaults write com.adobe.AdobeUpdater.Admin Disable.Update -bool yes
 ### Transmission.app
 
 Don’t prompt for confirmation before downloading:
-
 ```bash
 $ defaults write org.m0k.transmission DownloadAsk -bool false
 $ defaults write org.m0k.transmission MagnetOpenAsk -bool false
 ```
 
 Don’t prompt for confirmation before removing non-downloading active transfers:
-
 ```bash
-defaults write org.m0k.transmission CheckRemoveDownloading -bool true
+$ defaults write org.m0k.transmission CheckRemoveDownloading -bool true
 ```
 
 Hide the donate message:
@@ -1016,7 +1003,7 @@ $ defaults write org.m0k.transmission WarningDonate -bool false
 ```
 
 Hide the legal disclaimer:
-``bash
+```bash
 $ defaults write org.m0k.transmission WarningLegal -bool false
 ```
 
