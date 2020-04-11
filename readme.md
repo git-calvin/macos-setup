@@ -862,6 +862,12 @@ Empty Trash securely by default:
 $ defaults write com.apple.finder EmptyTrashSecurely -bool true
 ```
 
+Full Path in Finder Title Bar: 
+
+```bash
+$ defaults write com.apple.finder _FXShowPosixPathInTitle -bool YES;
+```
+
 ***
 
 ### CTF Tools
