@@ -826,13 +826,20 @@ $ sudo ifconfig en0 ether <MAC_ADDRESS>
 
 ### <u>Tweaks</u>
 
-Reveal IP address, hostname, OS version, etc. when clicking the clock in the login window:
+Reset dock back to default:
 
 ```bash
-$ defaults write /Library/Preferences/com.apple.loginwindow AdminHostInfo HostName
+$ defaults delete com.apple.dock; killall Dock
 ```
 
-Avoid creating .DS_Store ﬁles on network volumes:
+Change image type for screenshots:
+```bash
+$ defaults write com.apple.screencapture type -string "png"
+```
+(Replace `png` with any other i.e. `bmp`, `gif`, `jpg`, `pdf`, `tiff` 
+
+
+Avoid creating .DS_Store ﬁles on network or USB volumes:
 
 ```bash
 $ defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true
@@ -866,6 +873,31 @@ Full Path in Finder Title Bar:
 
 ```bash
 $ defaults write com.apple.finder _FXShowPosixPathInTitle -bool YES;
+```
+
+Automatically quit printer app once print jobs has been completed:
+
+```bash
+$ defaults write com.apple.print.PrintingPrefs "Quit When Finished" -bool true
+```
+
+Disable the “Are you sure you want to open this application?” dialog message:
+
+```bash
+defaults write com.apple.LaunchServices LSQuarantine -bool false
+```
+
+Reveal IP address, hostname, OS version, etc. when clicking the clock in the login window
+
+```bash
+$ sudo defaults write /Library/Preferences/com.apple.loginwindow AdminHostInfo HostName
+```
+
+Don't send search queries to Apple in Safari:
+
+```bash
+$ defaults write com.apple.Safari UniversalSearchEnabled -bool false
+$ defaults write com.apple.Safari SuppressSearchSuggestions -bool true
 ```
 
 ***
@@ -945,7 +977,7 @@ $ defaults write com.apple.universalaccess reduceTransparency -bool false
 
 ***
 
-### Save to Disk by Default
+### Save to Disk by Default (Not iCloud)
 
 Sets default save target to local disk instead of iCloud
 
@@ -959,6 +991,38 @@ $ defaults write -g NSDocumentSaveNewDocumentsToCloud -bool false
 
 ```bash
 $ defaults write com.adobe.AdobeUpdater.Admin Disable.Update -bool yes
+```
+
+***
+
+### Transmission.app
+
+Don’t prompt for confirmation before downloading:
+
+```bash
+$ defaults write org.m0k.transmission DownloadAsk -bool false
+$ defaults write org.m0k.transmission MagnetOpenAsk -bool false
+```
+
+Don’t prompt for confirmation before removing non-downloading active transfers:
+
+```bash
+defaults write org.m0k.transmission CheckRemoveDownloading -bool true
+```
+
+Hide the donate message:
+```bash
+$ defaults write org.m0k.transmission WarningDonate -bool false
+```
+
+Hide the legal disclaimer:
+``bash
+$ defaults write org.m0k.transmission WarningLegal -bool false
+```
+
+Randomize port on launch:
+```bash
+$ defaults write org.m0k.transmission RandomPort -bool true
 ```
 
 ***
