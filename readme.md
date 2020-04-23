@@ -276,7 +276,7 @@ $ brew install gpg pinentry-mac
 ```
 To list the GPG keys, use the command:
 
-``bash
+```bash
 $ gpg --list-keys
 ```
 * Your keyring should be empty at this point. 
@@ -351,19 +351,20 @@ $ gpg --expert --edit-key YOUR@EMAIL.com
 
 * Type `save` to quit and exit.
 
-To export your private key, use the command: 
+
+To EXPORT YOUR PRIVATE KEY, use the command: 
 
 ```bash
 $ gpg --export-secret-keys --armor YOUR@EMAIL.com > YOUR@EMAIL.com.private.gpg-key
 ```
 
-To export your public key, use the command: 
+To EXPORT YOUR PUBLIC KEY, use the command: 
 
 ```bash
 $ gpg --export --armor YOUR@EMAIL.com > YOUR@EMAIL.com.public.gpg-key
 ```
 
-To create a revocation certificate, use the command:
+To CREATE A REVOCATION CERTIFICATE, use the command:
 ```bash
 $ gpg --output YOUR@EMAIL.com.gpg-revocation-certificate --gen-revoke YOUR@EMAIL.com
 ```
