@@ -269,15 +269,19 @@ $ brew install tree fzf ack htop httpd gcc mas neofetch nmap openssh openssl p7z
 
 ### GPG
 
-GPG is a free software alternative to the closed source commercial PGP. You will also need pinentry-mac. `Pinentry-mac` is a tool which prompts with a native dialog box for your GPG key passphrase and also allows you to store the password in your Mac’s keychain. To install GPG with Homebrew, use the following command: 
+GPG is a free software alternative to the closed source commercial PGP. You will also need pinentry-mac. `pinentry-mac` is a tool which prompts with a native dialog box for your GPG key passphrase and also allows you to store the password in your Mac’s keychain. To install GPG and pinentry-mac, use the following command: 
 
 ```bash
 $ brew install gpg pinentry-mac
+```
+To list the GPG keys, use the command:
+
+``bash
 $ gpg --list-keys
 ```
-Your keyring should be empty at this point. 
+* Your keyring should be empty at this point. 
 
-To enable pinentry, edit the `$HOME/.gnupg/gpg-agent.conf` file. 
+To enable pinentry, edit the `$HOME/.gnupg/gpg-agent.conf` file, use the command: 
 
 ```bash
 $ echo "pinentry-program /usr/local/bin/pinentry-mac" >> $HOME/.gnupg/gpg-agent.conf
@@ -319,7 +323,9 @@ You will now be prompted for your master key passphrase. Please ensure this is a
 $ gpg --edit-key YOUR@EMAIL.com
 ```
 
-* Paste `setpref SHA512 SHA384 SHA256 SHA224 AES256 AES192 AES CAST5 ZLIB BZIP2 ZIP Uncompressed` into it and type `y` to confirm.
+* Paste `setpref SHA512 SHA384 SHA256 SHA224 AES256 AES192 AES CAST5 ZLIB BZIP2 ZIP Uncompressed` into it and press `enter`.
+
+* Type `y` to confirm.
 
 * Type `save` to save and exit.
 
@@ -345,11 +351,22 @@ $ gpg --expert --edit-key YOUR@EMAIL.com
 
 * Type `save` to quit and exit.
 
-To export your private key: `gpg --export-secret-keys --armor YOUR@EMAIL.com > YOUR@EMAIL.com.private.gpg-key`  
+To export your private key, use the command: 
 
-To export your public key: `gpg --export --armor YOUR@EMAIL.com > YOUR@EMAIL.com.public.gpg-key`  
+```bash
+$ gpg --export-secret-keys --armor YOUR@EMAIL.com > YOUR@EMAIL.com.private.gpg-key
+```
 
-To create a revocation certificate: `gpg --output YOUR@EMAIL.com.gpg-revocation-certificate --gen-revoke YOUR@EMAIL.com`  
+To export your public key, use the command: 
+
+```bash
+$ gpg --export --armor YOUR@EMAIL.com > YOUR@EMAIL.com.public.gpg-key
+```
+
+To create a revocation certificate, use the command:
+```bash
+$ gpg --output YOUR@EMAIL.com.gpg-revocation-certificate --gen-revoke YOUR@EMAIL.com
+```
 
 * Follow the prompts to create the revocation certificate. For reason, I suggest `1 = Key has been compromised` and you can hit enter on the description line (it’s not needed).
 
