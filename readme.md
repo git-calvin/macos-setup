@@ -289,39 +289,39 @@ To generate a master key, use the command:
 $ gpg --expert --full-generate-key
 ```
 
-	When prompted for what kind of key, pick option: `(8) RSA (set your own capabilities)`.
+* When prompted for what kind of key, pick option: `(8) RSA (set your own capabilities)`.
 
-	When prompted for capabilities, type `s` and hit enter to toggle off the Sign capability.
+* When prompted for capabilities, type `s` and hit enter to toggle off the Sign capability.
 
-	Next type `e` and hit enter to toggle off the Encrypt capability.
+* Next type `e` and hit enter to toggle off the Encrypt capability.
 
-	Confirm that the current allowed actions only lists Certify, then type `q` and hit enter to finish setting 	capabilities.
+* Confirm that the current allowed actions only lists Certify, then type `q` and hit enter to finish setting capabilities.
 
-	Now you are prompted for how long the RSA key should be. Type `4096` to set the highest security that GPG currently supports.
+* Now you are prompted for how long the RSA key should be. Type `4096` to set the highest security that GPG currently supports.
 
-	For expiration, I suggest picking `0` so the key doesn’t expire.
+* For expiration, I suggest picking `0` so the key doesn’t expire.
 
-	For the Real Name, I suggest picking the same “friendly name” you use for outgoing email.
+* For the Real Name, I suggest picking the same “friendly name” you use for outgoing email.
 
-	Next provide the email address you want to use for receiving encrypted email.
+* Next provide the email address you want to use for receiving encrypted email.
 
-	I will reference this email as `YOUR@EMAIL.com` for the remainder of this install.
+* I will reference this email as `YOUR@EMAIL.com` for the remainder of this install.
 
-	If you’d like to enter a comment for the key, you can do so next. Otherwise hit `enter` to skip it.
+* If you’d like to enter a comment for the key, you can do so next. Otherwise hit `enter` to skip it.
 
-	If everything looks good at this point, hit `o` for Okay.
+* If everything looks good at this point, hit `o` for Okay.
 
 You will now be prompted for your master key passphrase. Please ensure this is a secure password that you have not used anywhere else.
 
-	To set secure preferences on key, use the following command:
+* To set secure preferences on key, use the following command:
 
-	```bash
-	$ gpg --edit-key YOUR@EMAIL.com
-	```
+```bash
+$ gpg --edit-key YOUR@EMAIL.com
+```
 
-	Paste `setpref SHA512 SHA384 SHA256 SHA224 AES256 AES192 AES CAST5 ZLIB BZIP2 ZIP Uncompressed` into it and type `y` to confirm.
+* Paste `setpref SHA512 SHA384 SHA256 SHA224 AES256 AES192 AES CAST5 ZLIB BZIP2 ZIP Uncompressed` into it and type `y` to confirm.
 
-	Type `save` to save and exit.
+* Type `save` to save and exit.
 
 To add a SUBKEY used to encrypt and sign, use the following command:
 
@@ -329,21 +329,21 @@ To add a SUBKEY used to encrypt and sign, use the following command:
 $ gpg --expert --edit-key YOUR@EMAIL.com
 ```
 
-	At the prompt, type `addkey`.
+* At the prompt, type `addkey`.
 
-	Choose option: `(8) RSA (set your own capabilities)` as before.
+* Choose option: `(8) RSA (set your own capabilities)` as before.
 
-	Unlike before, the capabilities are already set the way I want (“Sign Encrypt”), so type `q` to finish capability selection.
+* Unlike before, the capabilities are already set the way I want (“Sign Encrypt”), so type `q` to finish capability selection.
 
-	Type `4096` as previously done for the keysize.
+* Type `4096` as previously done for the keysize.
 
-	Next, we suggest using `0` for no expiration as before.
+* Next, we suggest using `0` for no expiration as before.
 
-	Confirm `y` at the next two prompts.
+* Confirm `y` at the next two prompts.
 
-	After entering your passphrase, your subkey is now created.
+* After entering your passphrase, your subkey is now created.
 
-	Type `save` to quit and exit.
+* Type `save` to quit and exit.
 
 To export your private key: `gpg --export-secret-keys --armor YOUR@EMAIL.com > YOUR@EMAIL.com.private.gpg-key`  
 
@@ -351,10 +351,9 @@ To export your public key: `gpg --export --armor YOUR@EMAIL.com > YOUR@EMAIL.com
 
 To create a revocation certificate: `gpg --output YOUR@EMAIL.com.gpg-revocation-certificate --gen-revoke YOUR@EMAIL.com`  
 
+* Follow the prompts to create the revocation certificate. For reason, I suggest `1 = Key has been compromised` and you can hit enter on the description line (it’s not needed).
 
-	Follow the prompts to create the revocation certificate. For reason, I suggest `1 = Key has been compromised` and you can hit enter on the description line (it’s not needed).
-
-	Backup your keys in a safe place. 
+* Backup your keys in a safe place. 
 
 I suggest deleting the private key and revocation certificate from your computer afterwards. 
 
