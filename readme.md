@@ -266,6 +266,97 @@ $ brew install tree fzf ack htop httpd gcc mas neofetch nmap openssh openssl p7z
 
 ***
 
+### GPG
+
+To generate your keys, you need to install GnuPG (aka GPG). GPG is a free software alternative to the closed source commercial PGP. To install GPG with Homebrew, use the following command: 
+
+`Pinentry-mac` is a tool which prompts with a native dialog box for your GPG key passphrase and also allows you to store the password in your Mac’s Keychain
+
+```bash
+$ brew install gpg pinentry-mac
+$ gpg --list-keys
+```
+This keyring should be empty at this point. 
+
+Edit the `$HOME/.gnupg/gpg-agent.conf` file to enable pinentry by using this command:
+
+```bash
+$ echo "pinentry-program /usr/local/bin/pinentry-mac" >> $HOME/.gnupg/gpg-agent.conf
+```
+To generate master key: 
+
+```bash
+$ gpg --expert --full-generate-key
+```
+When prompted for what kind of key, pick option: `(8) RSA (set your own capabilities)`.
+
+Next you want to toggle off the sign and encrypt capabilities from the key.
+
+When prompted for capabilities, type `s` and hit enter to toggle off the Sign capability.
+
+Next type `e` and hit enter to toggle off the Encrypt capability.
+
+Confirm that the current allowed actions only lists Certify, then type `q` and hit enter to finish setting capabilities.
+
+Now you are prompted for how long the RSA key should be. Type `4096` to set the highest security that GPG currently supports.
+
+For expiration, I suggest picking `0` so the key doesn’t expire.
+
+Now GPG needs to know who this key is for. For the Real Name, I suggest picking the same “friendly name” you use for outgoing email.
+
+Next provide the email address you want to use for receiving encrypted email.
+
+We will reference this email as `YOUR@EMAIL.com` for the remainder of this install.
+
+If you’d like to enter a comment for the key, you can do so next. Otherwise hit `enter` to skip it.
+
+If everything looks good at this point, hit `o` for Okay.
+
+You will now be prompted for your master key passphrase. Please ensure this is a secure password that you have not used anywhere else.
+
+To set secure preferences on key, use the following command:
+
+```bash
+$ gpg --edit-key YOUR@EMAIL.com
+```
+
+Paste `setpref SHA512 SHA384 SHA256 SHA224 AES256 AES192 AES CAST5 ZLIB BZIP2 ZIP Uncompressed` into it and type `y` to confirm.
+
+Type `save` to save and exit.
+
+To add a subkey used to encrypt and sign, use the following command:
+
+```bash
+$ gpg --expert --edit-key YOUR@EMAIL.com
+```
+At the prompt, type `addkey`.
+
+Choose option: `(8) RSA (set your own capabilities)` as before.
+
+Unlike before, the capabilities are already set the way I want (“Sign Encrypt”), so type `q` to finish capability selection.
+
+Type `4096` as previously done for the keysize.
+
+Next, we suggest using `0` for no expiration as before.
+
+Confirm `y` at the next two prompts.
+
+After entering your passphrase, your subkey is now created.
+
+Type save to quit and exit.
+
+To export your private key: `gpg --export-secret-keys --armor YOUR@EMAIL.com > YOUR@EMAIL.com.private.gpg-key`
+To export your public key: `gpg --export --armor YOUR@EMAIL.com > YOUR@EMAIL.com.public.gpg-key`
+To create a revocation certificate: `gpg --output YOUR@EMAIL.com.gpg-revocation-certificate --gen-revoke YOUR@EMAIL.com`
+
+Follow the prompts to create the revocation certificate. For reason, I suggest `1 = Key has been compromised` and you can hit enter on the description line (it’s not needed).
+
+Backup your keys in a safe place. 
+
+I suggest deleting the private key and revocation certificate afterwards. 
+
+***
+
 ### <u>Python</u>
 
 A interpreted, high-level, general-purpose programming language. There are many ways to install Python, but I found this to be best. 
