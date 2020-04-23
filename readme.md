@@ -12,6 +12,7 @@
    * [Install Zsh](#zsh)
    * [Install Oh My Zsh](#oh-my-zsh)
    * [Install Git](#git)
+   * [Setup GPG Keys](#gpg)
    * [Install Powerlevel10K](#powerlevel10k)
    * [Setup Message of the Day](#message-of-the-day)
    * [Generate SSH Keys](#generate-ssh-keys)
@@ -268,29 +269,27 @@ $ brew install tree fzf ack htop httpd gcc mas neofetch nmap openssh openssl p7z
 
 ### GPG
 
-To generate your keys, you need to install GnuPG (aka GPG). GPG is a free software alternative to the closed source commercial PGP. To install GPG with Homebrew, use the following command: 
-
-`Pinentry-mac` is a tool which prompts with a native dialog box for your GPG key passphrase and also allows you to store the password in your Mac’s Keychain
+GPG is a free software alternative to the closed source commercial PGP. You will also need pinentry-mac. `Pinentry-mac` is a tool which prompts with a native dialog box for your GPG key passphrase and also allows you to store the password in your Mac’s keychain. To install GPG with Homebrew, use the following command: 
 
 ```bash
 $ brew install gpg pinentry-mac
 $ gpg --list-keys
 ```
-This keyring should be empty at this point. 
+Your keyring should be empty at this point. 
 
-Edit the `$HOME/.gnupg/gpg-agent.conf` file to enable pinentry by using this command:
+To enable pinentry, edit the `$HOME/.gnupg/gpg-agent.conf` file. 
 
 ```bash
 $ echo "pinentry-program /usr/local/bin/pinentry-mac" >> $HOME/.gnupg/gpg-agent.conf
 ```
-To generate master key: 
+
+To generate a master key, use the command:
 
 ```bash
 $ gpg --expert --full-generate-key
 ```
-When prompted for what kind of key, pick option: `(8) RSA (set your own capabilities)`.
 
-Next you want to toggle off the sign and encrypt capabilities from the key.
+When prompted for what kind of key, pick option: `(8) RSA (set your own capabilities)`.
 
 When prompted for capabilities, type `s` and hit enter to toggle off the Sign capability.
 
@@ -302,11 +301,11 @@ Now you are prompted for how long the RSA key should be. Type `4096` to set the 
 
 For expiration, I suggest picking `0` so the key doesn’t expire.
 
-Now GPG needs to know who this key is for. For the Real Name, I suggest picking the same “friendly name” you use for outgoing email.
+For the Real Name, I suggest picking the same “friendly name” you use for outgoing email.
 
 Next provide the email address you want to use for receiving encrypted email.
 
-We will reference this email as `YOUR@EMAIL.com` for the remainder of this install.
+I will reference this email as `YOUR@EMAIL.com` for the remainder of this install.
 
 If you’d like to enter a comment for the key, you can do so next. Otherwise hit `enter` to skip it.
 
@@ -324,11 +323,12 @@ Paste `setpref SHA512 SHA384 SHA256 SHA224 AES256 AES192 AES CAST5 ZLIB BZIP2 ZI
 
 Type `save` to save and exit.
 
-To add a subkey used to encrypt and sign, use the following command:
+To add a SUBKEY used to encrypt and sign, use the following command:
 
 ```bash
 $ gpg --expert --edit-key YOUR@EMAIL.com
 ```
+
 At the prompt, type `addkey`.
 
 Choose option: `(8) RSA (set your own capabilities)` as before.
