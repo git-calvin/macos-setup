@@ -287,7 +287,7 @@ To enable pinentry, edit the `$HOME/.gnupg/gpg-agent.conf` file, use the command
 $ echo "pinentry-program /usr/local/bin/pinentry-mac" >> $HOME/.gnupg/gpg-agent.conf
 ```
 
-To generate a master key, use the command:
+To **GENERATE A MASTER KEY**, use the command:
 
 ```bash
 $ gpg --expert --full-generate-key
@@ -329,7 +329,7 @@ $ gpg --edit-key YOUR@EMAIL.com
 
 * Type `save` to save and exit.
 
-To add a SUBKEY used to encrypt and sign, use the following command:
+To **ADD A SUBKEY** to be used to encrypt and sign, use the following command:
 
 ```bash
 $ gpg --expert --edit-key YOUR@EMAIL.com
@@ -352,19 +352,19 @@ $ gpg --expert --edit-key YOUR@EMAIL.com
 * Type `save` to quit and exit.
 
 
-To EXPORT YOUR PRIVATE KEY, use the command: 
+To **EXPORT YOUR PRIVATE KEY**, use the command: 
 
 ```bash
 $ gpg --export-secret-keys --armor YOUR@EMAIL.com > YOUR@EMAIL.com.private.gpg-key
 ```
 
-To EXPORT YOUR PUBLIC KEY, use the command: 
+To **EXPORT YOUR PUBLIC KEY**, use the command: 
 
 ```bash
 $ gpg --export --armor YOUR@EMAIL.com > YOUR@EMAIL.com.public.gpg-key
 ```
 
-To CREATE A REVOCATION CERTIFICATE, use the command:
+To **CREATE A REVOCATION CERTIFICATE**, use the command:
 ```bash
 $ gpg --output YOUR@EMAIL.com.gpg-revocation-certificate --gen-revoke YOUR@EMAIL.com
 ```
