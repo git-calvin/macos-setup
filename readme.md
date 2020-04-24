@@ -1,8 +1,8 @@
 # Table of Contents
 ***
 
-### Check macOS for Software Updates
-   * [Check for updates](#check-for-updates)  
+### Check for Software Updates
+   * [Check for Software Updates](#check-for-updates)  
 
 ### Setting up the Terminal
    * [Download iTerm2](#iterm2)
@@ -45,7 +45,7 @@
    
 ### Pentesting Tools
    * [Install Aircrack-ng](#aircrack-ng)
-   * [Capture the Flag Tools](#ctf-tools)
+   * [Install Capture the Flag Tools](#ctf-tools)
    * [Install VirtualBox](#virtualbox)
 
 ### Setting up Text Editors
@@ -72,7 +72,7 @@
 
 ### Check for updates
 
-Checks and install all avaliable macOS software updates.
+Checks and install all avaliable software updates.
 
 ```bash
 $ softwareupdate -ia
@@ -142,7 +142,7 @@ A powerful shell designed for interactive use. Features of bash, tsh, and tcsh a
 $ brew install zsh
 ```
 
-If needed, make zsh default shell using this command: `chsh -s $(which zsh)`
+If necessary, make zsh default shell using this command: `chsh -s $(which zsh)`
 
 ***
 
@@ -154,9 +154,14 @@ Official Github: [Oh My Zsh](https://github.com/ohmyzsh/ohmyzsh)
 
 ```bash
 $ sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+```
+Change file permissions for the following folders:
+
+```bash
 $ chmod 755 /usr/local/share/zsh
 $ chmod 755 /usr/local/share/zsh/site-functions
 ```
+Install plugins: 
 
 ```bash
 $ cd ~/.oh-my-zsh/custom/plugins
@@ -165,6 +170,8 @@ $ git clone https://github.com/zsh-users/zsh-autosuggestions
 ```
 
 Add `zsh-syntax-highlighting`, `zsh-autosuggestions`, `colored-man-pages` in `~/.zshrc` under plugins. 
+
+Refresh the shell enviornment:
 
 ```bash
 $ source ~/.zshrc	
