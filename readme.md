@@ -1,10 +1,7 @@
-# Table of Contents
+## Table of Contents
 ***
 
-### Check for Software Updates
    * [Check for Software Updates](#check-for-updates)  
-
-### Setting up the Terminal
    * [Download iTerm2](#iterm2)
    * [Download Nerd Fonts](#nerd-fonts)
    * [Install macOS Command Line Tools](#install-command-line-tools-without-xcode)
@@ -17,11 +14,7 @@
    * [Setup Message of the Day](#message-of-the-day)
    * [Generate SSH Keys](#generate-ssh-keys)
    * [Useful Aliases](#alias)
-   
-### Installing Homebrew Packages
    * [Install Homebrew Packages](#homebrew-packages)
-
-### Setting up a Development Enviornment
    * [Install Python](#python)
    * [Install Virtualenv](#virtualenv)
    * [Install Pipenv](#pipenv)
@@ -42,25 +35,17 @@
    * [Setup Apache Server](#apache)
    * [Install PHP](#php)
    * [Setting up php-fpm with Nginx](#setting-up-php-fpm-with-nginx)
-   
-### Pentesting Tools
    * [Install Aircrack-ng](#aircrack-ng)
    * [Install Capture the Flag Tools](#ctf-tools)
    * [Install VirtualBox](#virtualbox)
-
-### Setting up Text Editors
    * [Install Sublime Text 3](#sublime-text-3)
    * [Install Visual Studio Code](#visual-studio-code)
-   
-### Tweaks for macOS
    * [Write to NTFS on macOS Catalina](#write-to-ntfs-on-macos-catalina)
    * [Disable Gatekeeper](#disable-gatekeeper)
    * [Spoof MAC Address](#spoof-mac-address)
    * [Tweaks](#tweaks)
    * [Tweak macOS Appearance](#macos-appearance)
    * [Save to Disk by Default](#save-to-disk-by-default)
-
-### Firefox Tweaks
    * [Firefox Browser Extensions (Online Privacy)](#firefox-browser-extensions)
    * [Firefox Configurations (Online Privacy)](#firefox-privacy-focused-configuration)
    
@@ -190,7 +175,7 @@ $ brew install git
 Git extras:
 
 ```bash
-brew install git-lfs git-flow git-extras
+$ brew install git-lfs git-flow git-extras
 ```
 
 Git setup:
