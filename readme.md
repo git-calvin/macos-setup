@@ -598,20 +598,21 @@ A network suite of tools to access WiFi network security.
 $ brew install aircrack-ng
 $ sudo ln -s /System/Library/PrivateFrameworks/Apple80211.framework/Versions/Current/Resources/airport /usr/local/bin/airport
 ```
+Usage:
 
-Scan Wifi:  `airport -s`
+* Scan Wifi:  `airport -s`
 
-Disconnect Wifi:  `airport -z`
+* Disconnect Wifi:  `airport -z`
 
-Monitor Mode On:  `sudo airport <interface> sniff <channel>`, e.g. `airport en0 sniff 6`
+* Monitor Mode On:  `sudo airport <interface> sniff <channel>`, e.g. `airport en0 sniff 6`
 
-Monitor Mode Off:  `ps -ax | grep -a airport.*sniff`
+* Monitor Mode Off:  `ps -ax | grep -a airport.*sniff`
 
-Brute Hash: `aircrack-ng -1 -a 1 -b <BSSID> <cap_file> -w <wordlist>`
+* Brute Hash: `aircrack-ng -1 -a 1 -b <BSSID> <cap_file> -w <wordlist>`
 
-Kill Processes:  `sudo kill -9 <process id>`
+* Kill Processes:  `sudo kill -9 <process id>`
 
-Cap File Location: `/tmp/airportSniff*.cap`
+* Cap File Location: `/tmp/airportSniff*.cap`
 
 ***
 
@@ -673,7 +674,7 @@ Now, go on browser and navigate to: `http://127.0.0.1:8080/test.php`
 
 ***
 
-### <u>Setting up php fpm with Nginx</u>
+### <u>Setting up php-fpm with Nginx</u>
 
 ```bash
 $ brew install nginx
@@ -904,7 +905,7 @@ To test MAC address after boot, use: `spoof-mac list`
 
 ***
 
-Alternative: If you don't want to install SpoofMac
+If you don't want to install SpoofMac, you can change MAC address manually using the following commands: 
 
 Check existing MAC address:
 
