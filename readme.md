@@ -12,7 +12,7 @@
    * [Setup GPG Keys](#gpg)
    * [Install Powerlevel10K](#powerlevel10k)
    * [Setup Message of the Day](#message-of-the-day)
-   * [Install Speedtest by Ookla](#speedtest-cli-by-ookla)
+   * [Install Speedtest CLI by Ookla](#speedtest-cli-by-ookla)
    * [Generate SSH Keys](#generate-ssh-keys)
    * [Useful Aliases](#alias)
    * [Install Homebrew Packages](#homebrew-packages)
