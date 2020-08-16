@@ -12,7 +12,7 @@
    * [Setup GPG Keys](#gpg)
    * [Install Powerlevel10K](#powerlevel10k)
    * [Setup Message of the Day](#message-of-the-day)
-   * [Install Speedtest by Ookla](#speedtest-by-ookla)
+   * [Install Speedtest by Ookla](#speedtest-cli-by-ookla)
    * [Generate SSH Keys](#generate-ssh-keys)
    * [Useful Aliases](#alias)
    * [Install Homebrew Packages](#homebrew-packages)
@@ -260,7 +260,7 @@ $ brew install tree fzf ack htop httpd gcc mas neofetch nmap openssh openssl p7z
 
 ***
 
-### <u>Speedtest by Ookla</u>
+### <u>Speedtest CLI by Ookla</u>
 
 Measure internet connection performance metrics like download, upload, latency and packet loss natively without relying on a web browser:
 
