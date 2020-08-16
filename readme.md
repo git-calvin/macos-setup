@@ -260,17 +260,16 @@ $ brew install tree fzf ack htop httpd gcc mas neofetch nmap openssh openssl p7z
 
 ***
 
-***
-
 ### <u>Speedtest by Ookla</u>
 
-Measure internet connection performance metrics like download, upload, latency and packet loss natively without relying on a web browser
+Measure internet connection performance metrics like download, upload, latency and packet loss natively without relying on a web browser:
 
 ```bash
 $ brew tap teamookla/speedtest
 $ brew update
 $ brew install speedtest --force
 ```
+Usage: `$ speedtest`
 
 ***
 
