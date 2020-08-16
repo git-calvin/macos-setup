@@ -12,6 +12,7 @@
    * [Setup GPG Keys](#gpg)
    * [Install Powerlevel10K](#powerlevel10k)
    * [Setup Message of the Day](#message-of-the-day)
+   * [Install Speedtest by Ookla](#speedtest-by-ookla)
    * [Generate SSH Keys](#generate-ssh-keys)
    * [Useful Aliases](#alias)
    * [Install Homebrew Packages](#homebrew-packages)
@@ -254,7 +255,21 @@ Add: `fortune | cowsay | lolcat`. Save and exit.
 ### <u>Homebrew Packages</u>
 
 ```bash
-$ brew install tree fzf ack htop httpd gcc mas neofetch nmap openssh openssl p7zip rsync speedtest-cli ssh-copy-id subnetcalc telnet the_silver_searcher thefuck tldr tmux trash unrar unzip watch wget youtube-dl rtv vim exa
+$ brew install tree fzf ack htop httpd gcc mas neofetch nmap openssh openssl p7zip rsync ssh-copy-id subnetcalc telnet the_silver_searcher thefuck tldr tmux trash unrar unzip watch wget youtube-dl rtv vim exa
+```
+
+***
+
+***
+
+### <u>Speedtest by Ookla</u>
+
+Measure internet connection performance metrics like download, upload, latency and packet loss natively without relying on a web browser
+
+```bash
+$ brew tap teamookla/speedtest
+$ brew update
+$ brew install speedtest --force
 ```
 
 ***
