@@ -38,6 +38,7 @@
    * [Setting up php-fpm with Nginx](#setting-up-php-fpm-with-nginx)
    * [Install Aircrack-ng](#aircrack-ng)
    * [Install Capture the Flag Tools](#ctf-tools)
+   * [Install Metasploit Framework](#metasploit-framework)
    * [Install VirtualBox](#virtualbox)
    * [Install Sublime Text 3](#sublime-text-3)
    * [Install Visual Studio Code](#visual-studio-code)
@@ -1016,6 +1017,18 @@ A collection of Capture the Flag (CTF) Tools
 ``` bash
 $ brew install bfg binutils binwalk cifer dex2jar dns2tcp fcrackzip foremost hashpump hydra john knock netpbm pngcheck socat sqlmap tcpflow tcpreplay tcptrace xz ucspi-tcp
 ```
+
+***
+
+### Metasploit Framework 
+
+```bash
+$ curl https://raw.githubusercontent.com/rapid7/metasploit-omnibus/master/config/templates/metasploit-framework-wrappers/msfupdate.erb > msfinstall && \
+  chmod 755 msfinstall && \
+  ./msfinstall
+```
+
+To run use: `$ /opt/metasploit-framework/bin/msfconsole`
 
 ***
 
