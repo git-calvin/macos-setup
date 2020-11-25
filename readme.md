@@ -657,7 +657,7 @@ To verify, go to browser and type "`localhost`" in search bar. You should see `"
 
 ```bash
 $ brew install php@7.4
-$ brew isntall composer
+$ brew install composer
 ```
 
 Test:
