@@ -256,7 +256,7 @@ Add: `fortune | cowsay | lolcat`. Save and exit.
 ### <u>Homebrew Packages</u>
 
 ```bash
-$ brew install tree fzf ack htop httpd gcc mas neofetch nmap openssh openssl p7zip rsync ssh-copy-id subnetcalc telnet the_silver_searcher thefuck tldr tmux trash unrar unzip watch wget youtube-dl rtv vim exa
+$ brew install tree fzf ack htop httpd gcc mas neofetch nmap openssh openssl p7zip rsync ssh-copy-id subnetcalc telnet the_silver_searcher thefuck tldr tmux trash unzip watch wget youtube-dl vim exa
 ```
 
 ***
@@ -391,8 +391,8 @@ A interpreted, high-level, general-purpose programming language. There are many 
 ```bash
 $ brew install pyenv
 $ pyenv install -l
-$ pyenv install 3.8.2
-$ pyenv global 3.8.2
+$ pyenv install 3.9.4
+$ pyenv global 3.9.4
 $ pyenv version
 $ echo -e 'if command -v pyenv 1>/dev/null 2>&1; then\n  eval "$(pyenv init -)"\nfi' >> ~/.zshrc
 $ exec $SHELL
@@ -433,8 +433,8 @@ $ brew install rbenv ruby-build
 $ echo 'if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi' >> ~/.zshrc
 $ source ~/.zshrc
 $ rbenv install -l
-$ rbenv install 2.7.0
-$ rbenv global 2.7.0
+$ rbenv install 3.0.1
+$ rbenv global 3.0.1
 $ exec $SHELL
 $ ruby -v
 ```
@@ -457,7 +457,7 @@ $ gem install bundler
 A web-application framework that includes everything needed to create database-backed web applications. 
 
 ```bash
-$ gem install rails -v 6.0.2.1
+$ gem install rails -v 6.1.3.1
 $ rbenv rehash
 $ rails -v
 ```
@@ -554,7 +554,7 @@ $ brew install yarn --ignore-dependencies
 
 ***
 
-### <u>Go</u>
+### <u>Go Lang</u>
 
 A statically typed, complied programming language designed at Google. Similar to C, but with memory safety, garbarge collection, structural typing, and CSP-style concurrency. 
 
@@ -593,13 +593,13 @@ Download: [Docker for Mac](https://hub.docker.com/editions/community/docker-ce-d
 
 ***
 
-### <u>Java JDK 8</u>
+### <u>Java JDK 11</u>
 
 A development enviornment for building applications and components using the Java programming language.
 
 ```bash
 $ brew tap adoptopenjdk/openjdk
-$ brew cask install adoptopenjdk8
+$ brew install adoptopenjdk11
 $ brew install maven
 ```
 
@@ -631,7 +631,7 @@ Usage:
 
 ***
 
-### <u>Apache</u>
+### <u>Apache Server</u>
 
 A open-source cross-platform web server software.
 
@@ -656,7 +656,7 @@ To verify, go to browser and type "`localhost`" in search bar. You should see `"
 ### <u>PHP</u>
 
 ```bash
-$ brew install php@7.4
+$ brew install php@8.0
 $ brew install composer
 ```
 
@@ -740,7 +740,7 @@ To block updates, add the following lines to `/etc/hosts`:
 127.0.0.1 www.sublimetext.com
 ```
 
-License Key for Sublime Text 3:  (Working as of 03-05-2020)
+License Key for Sublime Text 3:  (Working as of 04-20-2021)
 Please buy product if you like it!
 
 ```
@@ -804,7 +804,7 @@ $ brew cask install visual-studio-code
 
 ### <u>VirtualBox</u>
 
-Creates and managew virtual machines. A free solution to VMWare.
+Creates and manage virtual machines. A free solution to VMWare.
 
 ```bash
 brew cask install --appdir="/Applications" virtualbox
@@ -994,7 +994,7 @@ $ defaults write com.apple.print.PrintingPrefs "Quit When Finished" -bool true
 
 Disable the “Are you sure you want to open this application?” dialog message:
 ```bash
-defaults write com.apple.LaunchServices LSQuarantine -bool false
+$ defaults write com.apple.LaunchServices LSQuarantine -bool false
 ```
 
 Reveal IP address, hostname, OS version, etc. when clicking the clock in the login window
