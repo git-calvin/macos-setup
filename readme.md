@@ -153,6 +153,13 @@ Change file permissions for the following folders:
 $ chmod 755 /usr/local/share/zsh
 $ chmod 755 /usr/local/share/zsh/site-functions
 ```
+
+**Note:** On M1 Mac, the folder locations have changed, use this instead:
+```bash 
+$ chmod 755 /opt/homebrew/share/zsh
+$ chmod 755 /opt/homebrew/share/zsh/site-functions/
+```
+
 Install plugins: 
 
 ```bash
@@ -729,6 +736,8 @@ $ sudo brew services restart httpd
 $ sudo nano /usr/local/etc/httpd/httpd.conf
 ```
 
+**Note:** On M1 Mac, the `httpd.conf` is located in `/opt/homebrew/etc/httpd/httpd.conf`
+
 Find and replace, `Listen 8080` to `Listen 80` , and `ServerName www.example.com:8080` to `ServerName localhost`
 
 ```bash
@@ -784,7 +793,7 @@ $ sudo brew services start nginx
 $ brew services start php
 ```
 
-Edit the server section from `/usr/local/etc/nginx/nginx.conf`
+Edit the server section from `/usr/local/etc/nginx/nginx.conf` or `/opt/homebrew/etc/nginc/nginx.conf` on M1 Mac. 
 
 ```bash
 server {
@@ -1002,6 +1011,8 @@ Add these lines:
 </plist>
 ```
 Save and exit. Then Reboot.
+
+**NOTE:** On M1 Mac, change `<string>/usr/local/bin/spoof-mac.py</string>` to  `<string>/opt/homebrew/bin/spoof-mac.py</string>` in the script above.
 
 To test MAC address after boot, use: `spoof-mac list`
 
