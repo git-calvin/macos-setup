@@ -1,4 +1,4 @@
-## Table of Contents
+## Get Started
 ***
 
    * [Check for Software Updates](#check-for-updates)  
@@ -9,6 +9,7 @@
    * [Install Zsh](#zsh)
    * [Install Oh My Zsh](#oh-my-zsh)
    * [Install Git](#git)
+   * [Generate SSH Keys](#generate-ssh-keys)
    * [Setup GPG Keys](#gpg)
    * [Install Powerlevel10K](#powerlevel10k)
    * [Setup Message of the Day](#message-of-the-day)
