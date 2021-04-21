@@ -11,7 +11,7 @@
    * [Install Git](#git)
    * [Generate SSH Keys](#generate-ssh-keys)
    * [Install Powerlevel10K](#powerlevel10k)
-   * [Setup Message of the Day(MOTD)](#message-of-the-day)
+   * [Setup Message of the Day (MOTD)](#message-of-the-day)
    * [Install Homebrew Packages](#homebrew-packages)
    * [Install Speedtest CLI by Ookla](#speedtest-cli-by-ookla)
    * [Setup GPG Keys](#gpg)
@@ -267,87 +267,143 @@ Add: `fortune | cowsay | lolcat`. Save and exit.
 
 ### <u>Homebrew Packages</u>
 
+#### Tree
+Display directories as trees
 ```bash
 $ brew install tree
 ```
+#### FZF
+Command-Line Fuzzy Finder 
 ```bash
 $ brew install fzf
 ```
+#### ACK
+Search tool similar to grep, but optimized for programmers
 ```bash
 $ brew install ack
 ```
+#### HTOP
+Improved top (Interactive Process Viewer)
 ```bash
 $ brew install htop
 ```
+#### HTTPD
+Apache HTTP Server
 ```bash
 $ brew install httpd
 ```
+#### GCC
+GNU Complier Collection
 ```bash
 $ brew install gcc
 ```
+#### MAS
+Mac App Store Command Line Interface
 ```bash
 $ brew install mas
 ```
+#### Neofetch
+Fast, highly customisible system info script
 ```bash
 $ brew install neofetch
 ```
+#### Nmap
+Port scanning utility for large networks
 ```bash
 $ brew install nmap
 ```
+#### Openssh
+OpenBSD SSH connectivity tools
 ```bash
 $ brew install openssh
 ```
+#### Openssl
+Cryptography and SSL/TLS toolkit
 ```bash
 $ brew install openssl
 ```
+#### P7zip
+7-Zip (High Compression File Archiver)
 ```bash
 $ brew install p7zip 
 ```
+#### Rsync
+Utility that provides fast incremental file transfer
 ```bash
 $ brew install rsync 
 ```
+#### SSH Copy ID
+Add a public key to a remote machine's authorized_keys file
 ```bash
 $ brew install ssh-copy-id 
 ```
+#### Subnet Calculator
+IPv4/IPv6 subnet calculator
 ```bash
 $ brew install subnetcalc
 ```
+#### Telnet
+User interface to the TELNET protocol
 ```bash
 $ brew install telnet
 ```
+#### The Silver Searcher
+Code search similar to ack
 ```bash
 $ brew install the_silver_searcher
 ```
+#### The Fuck
+Programmatically correct mistyped console commands
 ```bash
 $ brew install thefuck
 ```
+#### Too Long Didn't Read
+Simplified and Community-Driven Man pages
 ```bash
 $ brew install tldr
 ```
+#### Tmux
+Terminal Multiplexer
 ```bash
 $ brew install tmux
 ```
+#### Trash
+CLI tool that moves files or folders to the trash
 ```bash
 $ brew install trash
 ```
+#### Unzip
+Extraction utility for .zip compressed archives
 ```bash
 $ brew install unzip
 ```
+#### Watch
+Executes a program periodically, showing output fullscreen
 ```bash
 $ brew install watch
 ```
+#### WGET
+Internet file retriever 
 ```bash
 $ brew install wget
 ```
+#### YouTube Downloader
+Download YouTube videos from the command-line
 ```bash
 $ brew install youtube-dl
 ```
+#### VIM
+Vi with many additional features
 ```bash 
 $ brew install vim
 ```
+#### EXA
+Modern replacement for ls command
 ```bash
 $ brew install exa
 ```
+#### Autojump
+Shell extention to jump to frequently used directories 
 ```bash
 $ brew install autojump
 ```
