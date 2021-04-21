@@ -2,57 +2,57 @@
 ***
 
    * [Check for Software Updates](#check-for-updates)  
-   * [Download iTerm2](#iterm2)
-   * [Download Nerd Fonts](#nerd-fonts)
-   * [Install macOS Command Line Tools](#install-command-line-tools-without-xcode)
+   * [Download and Install iTerm2](#iterm2)
+   * [Nerd Fonts](#nerd-fonts)
+   * [Install Command Line Tools](#install-command-line-tools-without-xcode)
    * [Install Homebrew](#homebrew)
-   * [Install Zsh](#zsh)
+   * [Install ZSH](#zsh)
    * [Install Oh My Zsh](#oh-my-zsh)
    * [Install Git](#git)
    * [Generate SSH Keys](#generate-ssh-keys)
    * [Install Powerlevel10K](#powerlevel10k)
-   * [Setup Message of the Day](#message-of-the-day)
+   * [Setup Message of the Day(MOTD)](#message-of-the-day)
    * [Install Homebrew Packages](#homebrew-packages)
    * [Install Speedtest CLI by Ookla](#speedtest-cli-by-ookla)
    * [Setup GPG Keys](#gpg)
-   * [Useful Aliases](#alias)
+   * [Add Useful Aliases](#alias)
    * [Install Python](#python)
    * [Install Virtualenv](#virtualenv)
    * [Install Pipenv](#pipenv)
    * [Install Ruby](#ruby)
-   * [Update RubyGems and Bundler](#rubygems-and-bundler)
+   * [Update Rubygems and Bundler](#rubygems-and-bundler)
    * [Install Rails](#rails)
    * [Install MySQL](#mysql)
    * [Install MySQL Workbench](#mysql-workbench)
    * [Install PostgreSQL](#postgresql)
    * [Install MongoDB](#mongodb)
-   * [Install Node.js](#node-js)
+   * [Install Node](#node-js)
    * [Install Yarn](#yarn)
    * [Install Go Lang](#go)
-   * [Install AWS Command Line Interface](#aws-command-line-interface)
+   * [Install AWS CLI](#aws-command-line-interface)
    * [Install Boto](#boto)
    * [Install Docker](#docker)
    * [Install Java JDK 11](#java-jdk-11)
    * [Install Aircrack-ng](#aircrack-ng)
    * [Setup Apache Server](#apache)
    * [Install PHP](#php)
-   * [Setting up php-fpm with Nginx](#setting-up-php-fpm-with-nginx)
+   * [Setting up PHP-FPM with Nginx](#setting-up-php-fpm-with-nginx)
    * [Install Aircrack-ng](#aircrack-ng)
-   * [Install Capture the Flag Tools](#ctf-tools)
-   * [Install Metasploit Framework](#metasploit-framework)
+   * [Install CTF Tools](#ctf-tools)
+   * [Install Metasploit](#metasploit-framework)
    * [Install VirtualBox](#virtualbox)
    * [Install Sublime Text 3](#sublime-text-3)
    * [Install Visual Studio Code](#visual-studio-code)
-   * [Write to NTFS on macOS Catalina](#write-to-ntfs-on-macos-catalina)
+   * [Write to NTFS on MacOS Catalina](#write-to-ntfs-on-macos-catalina)
    * [Disable Gatekeeper](#disable-gatekeeper)
-   * [Spoof MAC Address](#spoof-mac-address)
-   * [MacOS Tweaks](#tweaks)
-   * [Tweak macOS Appearance](#macos-appearance)
-   * [Save to Disk by Default](#save-to-disk-by-default)
+   * [Spoofing MAC Address](#spoof-mac-address)
+   * [Tweaks](#tweaks)
+   * [Tweak Appearance](#macos-appearance)
+   * [Save files to disk by default](#save-to-disk-by-default)
    * [Firefox Browser Extensions](#firefox-browser-extensions)
    * [Firefox Privacy Configurations](#firefox-privacy-focused-configuration)
    * [Disable Adobe Acrobat Updater](#disable-adobe-acrobat-updater)
-   * [Tweaks for Transmission app](#transmission.app)
+   * [Tweaks for Transmission App](#transmission-app)
    
 ***  
   
@@ -124,7 +124,7 @@ $ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/maste
 
 ***
 
-### <u>Zsh</u>
+### <u>ZSH</u>
 
 A powerful shell designed for interactive use. Features of bash, tsh, and tcsh are incorporated into zsh. 
 
@@ -1199,7 +1199,7 @@ $ defaults write com.adobe.AdobeUpdater.Admin Disable.Update -bool yes
 
 ***
 
-### Transmission.app
+### Transmission App
 
 Don’t prompt for confirmation before downloading:
 ```bash
