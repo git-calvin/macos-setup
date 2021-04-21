@@ -256,7 +256,88 @@ Add: `fortune | cowsay | lolcat`. Save and exit.
 ### <u>Homebrew Packages</u>
 
 ```bash
-$ brew install tree fzf ack htop httpd gcc mas neofetch nmap openssh openssl p7zip rsync ssh-copy-id subnetcalc telnet the_silver_searcher thefuck tldr tmux trash unzip watch wget youtube-dl vim exa
+$ brew install tree
+```
+```bash
+$ brew install fzf
+```
+```bash
+$ brew install ack
+```
+```bash
+$ brew install htop
+```
+```bash
+$ brew install httpd
+```
+```bash
+$ brew install gcc
+```
+```bash
+$ brew install mas
+```
+```bash
+$ brew install neofetch
+```
+```bash
+$ brew install nmap
+```
+```bash
+$ brew install openssh
+```
+```bash
+$ brew install openssl
+```
+```bash
+$ brew install p7zip 
+```
+```bash
+$ brew install rsync 
+```
+```bash
+$ brew install ssh-copy-id 
+```
+```bash
+$ brew install subnetcalc
+```
+```bash
+$ brew install telnet
+```
+```bash
+$ brew install the_silver_searcher
+```
+```bash
+$ brew install thefuck
+```
+```bash
+$ brew install tldr
+```
+```bash
+$ brew install tmux
+```
+```bash
+$ brew install trash
+```
+```bash
+$ brew install unzip
+```
+```bash
+$ brew install watch
+```
+```bash
+$ brew install wget
+```
+```bash
+$ brew install youtube-dl
+```
+```bash 
+$ brew install vim
+```
+```bash
+$ brew install exa
+```
+```bash
+$ brew install autojump
 ```
 
 ***
