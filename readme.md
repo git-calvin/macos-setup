@@ -108,6 +108,8 @@ Homebrew installs [the stuff](https://formulae.brew.sh/formula/) you need that A
 
 Official Site: [Homebrew](https://brew.sh/)
 
+**Note:** If you are using an M1 Macs, Homebrew is installed in `/opt/` directory by default instead of `/usr/local/etc` on Intel previously. You will need to change the path `/usr/local/etc` to `/opt/homebrew/etc` in some of the commands for it to work correctly. 
+
 ```bash
 $ /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 ```
@@ -734,6 +736,7 @@ $ sudo apachectl -k restart
 ```
 
 To verify, go to browser and type "`localhost`" in search bar. You should see `"It Works!"`
+
 
 ***
 
