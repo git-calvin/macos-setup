@@ -755,6 +755,13 @@ $ brew tap adoptopenjdk/openjdk
 $ brew install adoptopenjdk11
 $ brew install maven
 ```
+AdpotOpenJDK is deprecated. Use Temurin instead.
+
+```bash
+$ brew untap AdoptOpenJDK/openjdk
+$ brew tap homebrew/cask-versions
+$ brew install --cask temurin11
+```
 
 ***
 
