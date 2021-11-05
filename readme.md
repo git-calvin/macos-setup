@@ -1,71 +1,99 @@
-## Get Started
+# A Basic Development Setup Guide for macOS
+Last Updated on 11-05-2021
 ***
+- [A Basic Development Setup Guide for macOS](#a-basic-development-setup-guide-for-macos)
+    - [<u>Software Update</u>](#usoftware-updateu)
+    - [<u>iTerm2</u>](#uiterm2u)
+    - [<u>Nerd Fonts</u>](#unerd-fontsu)
+    - [<u>Install Command Line Tools without Xcode</u>](#uinstall-command-line-tools-without-xcodeu)
+    - [<u>Homebrew</u>](#uhomebrewu)
+    - [<u>ZSH</u>](#uzshu)
+    - [<u>Oh My Zsh</u>](#uoh-my-zshu)
+    - [<u>Git</u>](#ugitu)
+    - [<u>SSH Keys</u>](#ussh-keysu)
+    - [<u>Powerlevel10k</u>](#upowerlevel10ku)
+    - [<u>Message of the Day</u>](#umessage-of-the-dayu)
+    - [<u>Homebrew Packages</u>](#uhomebrew-packagesu)
+      - [**tree**](#tree)
+      - [**fzf**](#fzf)
+      - [**ack**](#ack)
+      - [**htop**](#htop)
+      - [**httpd**](#httpd)
+      - [**gcc**](#gcc)
+      - [**mas**](#mas)
+      - [**neofetch**](#neofetch)
+      - [**nmap**](#nmap)
+      - [**openSSH**](#openssh)
+      - [**openSSL**](#openssl)
+      - [**p7zip**](#p7zip)
+      - [**rsync**](#rsync)
+      - [**ssh-copy-id**](#ssh-copy-id)
+      - [**subnetcalc**](#subnetcalc)
+      - [**telnet**](#telnet)
+      - [**the silver searcher**](#the-silver-searcher)
+      - [**thefuck**](#thefuck)
+      - [**TLDR**](#tldr)
+      - [**tmux**](#tmux)
+      - [**trash**](#trash)
+      - [**unzip**](#unzip)
+      - [**watch**](#watch)
+      - [**wget**](#wget)
+      - [**youtube-dl**](#youtube-dl)
+      - [**vim**](#vim)
+      - [**exa**](#exa)
+      - [**autojump**](#autojump)
+    - [<u>Speedtest CLI by Ookla</u>](#uspeedtest-cli-by-ooklau)
+    - [<u>GPG</u>](#ugpgu)
+    - [<u>Python</u>](#upythonu)
+    - [<u>Virtualenv</u>](#uvirtualenvu)
+    - [<u>Pipenv</u>](#upipenvu)
+    - [<u>Ruby</u>](#urubyu)
+    - [<u>RubyGems and Bundler</u>](#urubygems-and-bundleru)
+    - [<u>Rails</u>](#urailsu)
+    - [<u>MySQL</u>](#umysqlu)
+    - [<u>MySQL Workbench</u>](#umysql-workbenchu)
+    - [<u>PostgreSQL</u>](#upostgresqlu)
+    - [<u>MongoDB</u>](#umongodbu)
+    - [<u>Node JS</u>](#unode-jsu)
+    - [<u>Yarn</u>](#uyarnu)
+    - [<u>Go Lang</u>](#ugo-langu)
+    - [<u>AWS Command Line Interface</u>](#uaws-command-line-interfaceu)
+    - [<u>Boto</u>](#ubotou)
+    - [<u>Docker</u>](#udockeru)
+    - [<u>Java JDK 8</u>](#ujava-jdk-8u)
+    - [<u>Aircrack-ng</u>](#uaircrack-ngu)
+    - [<u>Apache Server</u>](#uapache-serveru)
+    - [<u>PHP</u>](#uphpu)
+    - [<u>PHP-FPM with Nginx</u>](#uphp-fpm-with-nginxu)
+    - [<u>Sublime Text</u>](#usublime-textu)
+    - [<u>Visual Studio Code</u>](#uvisual-studio-codeu)
+    - [<u>VirtualBox</u>](#uvirtualboxu)
+    - [<u>Setting up Alias</u>](#usetting-up-aliasu)
+    - [<u>Write to NTFS on macOS Catalina</u>](#uwrite-to-ntfs-on-macos-catalinau)
+    - [<u>Disable macOS Gatekeeper</u>](#udisable-macos-gatekeeperu)
+    - [<u>Spoof MAC Address</u>](#uspoof-mac-addressu)
+    - [<u>Tweaks to macOS</u>](#utweaks-to-macosu)
+    - [<u>Capture The Flag Tools<u>](#ucapture-the-flag-toolsu)
+    - [<u>Metasploit Framework</u>](#umetasploit-frameworku)
+    - [<u>Recommended Firefox Browser Extensions</u>](#urecommended-firefox-browser-extensionsu)
+    - [<u>Firefox Privacy Focused Configuration</u>](#ufirefox-privacy-focused-configurationu)
+    - [<u>macOS Appearance</u>](#umacos-appearanceu)
+    - [<u>Save to Disk by Default (Not iCloud)</u>](#usave-to-disk-by-default-not-icloudu)
+    - [<u>Disable Adobe Acrobat Updater</u>](#udisable-adobe-acrobat-updateru)
+    - [<u>Transmission Torrent Client</u>](#utransmission-torrent-clientu)
+  
 
-   * [Check for Software Updates](#check-for-updates)  
-   * [Download and Install iTerm2](#iterm2)
-   * [Nerd Fonts](#nerd-fonts)
-   * [Install Command Line Tools](#install-command-line-tools-without-xcode)
-   * [Install Homebrew](#homebrew)
-   * [Install ZSH](#zsh)
-   * [Install Oh My Zsh](#oh-my-zsh)
-   * [Install Git](#git)
-   * [Generate SSH Keys](#generate-ssh-keys)
-   * [Install Powerlevel10K](#powerlevel10k)
-   * [Setup Message of the Day (MOTD)](#message-of-the-day)
-   * [Install Homebrew Packages](#homebrew-packages)
-   * [Install Speedtest CLI by Ookla](#speedtest-cli-by-ookla)
-   * [Setup GPG Keys](#gpg)
-   * [Add Useful Aliases](#alias)
-   * [Install Python](#python)
-   * [Install Virtualenv](#virtualenv)
-   * [Install Pipenv](#pipenv)
-   * [Install Ruby](#ruby)
-   * [Update Rubygems and Bundler](#rubygems-and-bundler)
-   * [Install Rails](#rails)
-   * [Install MySQL](#mysql)
-   * [Install MySQL Workbench](#mysql-workbench)
-   * [Install PostgreSQL](#postgresql)
-   * [Install MongoDB](#mongodb)
-   * [Install Node](#node-js)
-   * [Install Yarn](#yarn)
-   * [Install Go Lang](#go)
-   * [Install AWS CLI](#aws-command-line-interface)
-   * [Install Boto](#boto)
-   * [Install Docker](#docker)
-   * [Install Java JDK 11](#java-jdk-11)
-   * [Install Aircrack-ng](#aircrack-ng)
-   * [Setup Apache Server](#apache)
-   * [Install PHP](#php)
-   * [Setting up PHP-FPM with Nginx](#setting-up-php-fpm-with-nginx)
-   * [Install Aircrack-ng](#aircrack-ng)
-   * [Install CTF Tools](#ctf-tools)
-   * [Install Metasploit](#metasploit-framework)
-   * [Install VirtualBox](#virtualbox)
-   * [Install Sublime Text 3](#sublime-text-3)
-   * [Install Visual Studio Code](#visual-studio-code)
-   * [Write to NTFS on MacOS Catalina](#write-to-ntfs-on-macos-catalina)
-   * [Disable Gatekeeper](#disable-gatekeeper)
-   * [Spoofing MAC Address](#spoof-mac-address)
-   * [Tweaks](#tweaks)
-   * [Tweak Appearance](#macos-appearance)
-   * [Save files to disk by default](#save-to-disk-by-default)
-   * [Firefox Browser Extensions](#firefox-browser-extensions)
-   * [Firefox Privacy Configurations](#firefox-privacy-focused-configuration)
-   * [Disable Adobe Acrobat Updater](#disable-adobe-acrobat-updater)
-   * [Tweaks for Transmission App](#transmission-app)
-   
+
+
+
 ***  
   
-  
-  
-  
-
-### Check for updates
+### <u>Software Update</u>
 
 Checks and install all avaliable software updates.
 
 ```bash
-$ softwareupdate -ia
+softwareupdate -ia
 ```
 
 ***
@@ -74,21 +102,21 @@ $ softwareupdate -ia
 
 iTerm2 brings the terminal into the modern age with features you never knew you always wanted. 
 
-Download: [iTerm2](https://iterm2.com/downloads/stable/latest)
+**Download**: [iTerm2](https://iterm2.com/downloads/stable/latest)
 
-Download: [iTerm2 Themes](https://github.com/mbadolato/iTerm2-Color-Schemes/zipball/master)
+**Download**: [iTerm2 Themes](https://github.com/mbadolato/iTerm2-Color-Schemes/zipball/master)
 
 ***
 
-### Nerd Fonts
+### <u>Nerd Fonts</u>
 
-Nerd Fonts is a project that patches developer targeted fonts with a high number of glyphs (icons).
+Nerd Fonts is a project that patches developer targeted fonts with a high number of glyphs.
 
 Official Github: [NerdFonts](https://github.com/ryanoasis/nerd-fonts)
 
 Direct Download: [NerdFonts](https://github.com/ryanoasis/nerd-fonts/archive/master.zip)
 
-Unzip and use `./install` script to install to your system.
+Use `./install` script to install to your system.
 
 ***
 
@@ -97,7 +125,7 @@ Unzip and use `./install` script to install to your system.
 Download the macOS SDK, headers, and build tools. These tools make it easy to install open source software or develop on UNIX.
 
 ```bash
-$ xcode-select --install
+xcode-select --install
 ```
 
 ***
@@ -106,19 +134,19 @@ $ xcode-select --install
 
 Homebrew installs [the stuff](https://formulae.brew.sh/formula/) you need that Apple didn't. 
 
-Official Site: [Homebrew](https://brew.sh/)
+**Official Site**: [Homebrew](https://brew.sh/)
 
-**Note:** If you are using an M1 Macs, Homebrew is installed in `/opt/` directory by default instead of `/usr/local/etc` on Intel previously. You will need to change the path `/usr/local/etc` to `/opt/homebrew/etc` in some of the commands for it to work correctly. 
+**Note:** If you are using Apple Silicon, Homebrew is installed in `/opt/` directory by default instead of `/usr/local/etc` on Intel previously. You will need to change the path `/usr/local/etc` to `/opt/homebrew/etc` in some of the commands for it to work correctly. 
 
 ```bash
-$ /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 ```
 
-Useful commands:
+**Usage**:
 
 `brew cleanup` `brew doctor` `brew outdated` `brew upgrade` 
 
-To uninstall Homebrew:
+**To Uninstall Homebrew**:
 
 ```bash
 $ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/uninstall)"
@@ -131,7 +159,7 @@ $ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/maste
 A powerful shell designed for interactive use. Features of bash, tsh, and tcsh are incorporated into zsh. 
 
 ```bash
-$ brew install zsh
+brew install zsh
 ```
 
 If necessary, make zsh default shell using this command: `chsh -s $(which zsh)`
@@ -142,38 +170,30 @@ If necessary, make zsh default shell using this command: `chsh -s $(which zsh)`
 
 Oh My Zsh is a open source framework built on top of zsh for managing it's configuration. This framework will allow us to use themes, plugins, helpers, functions and many other cool things.
 
-Official Github: [Oh My Zsh](https://github.com/ohmyzsh/ohmyzsh)
+**Official Github**: [Oh My Zsh](https://github.com/ohmyzsh/ohmyzsh)
 
 ```bash
 $ sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 ```
-Change file permissions for the following folders:
+
+**Install Plugins**: 
 
 ```bash
-$ chmod 755 /usr/local/share/zsh
-$ chmod 755 /usr/local/share/zsh/site-functions
+cd ~/.oh-my-zsh/custom/plugins
 ```
-
-**Note:** On M1 Mac, the folder locations have changed, use this instead:
-```bash 
-$ chmod 755 /opt/homebrew/share/zsh
-$ chmod 755 /opt/homebrew/share/zsh/site-functions/
-```
-
-Install plugins: 
-
 ```bash
-$ cd ~/.oh-my-zsh/custom/plugins
-$ git clone https://github.com/zsh-users/zsh-syntax-highlighting
-$ git clone https://github.com/zsh-users/zsh-autosuggestions
+git clone https://github.com/zsh-users/zsh-syntax-highlighting
+```
+```bash
+git clone https://github.com/zsh-users/zsh-autosuggestions
 ```
 
 Add `zsh-syntax-highlighting`, `zsh-autosuggestions`, `colored-man-pages` in `~/.zshrc` under plugins. 
 
-Refresh the shell enviornment:
+**Refresh the Shell Enviornment**:
 
 ```bash
-$ source ~/.zshrc	
+source ~/.zshrc	
 ```
 
 ***
@@ -183,44 +203,54 @@ $ source ~/.zshrc
 A distributed version control system for tracking changes in souce code during software development.
 
 ```bash
-$ brew install git
+brew install git
 ```
 
-Git extras:
+**Git Extras**:
 
 ```bash
-$ brew install git-lfs git-flow git-extras
+brew install git-lfs git-flow git-extras
 ```
 
-Git setup:
+**Git Setup**:
 
 ```bash
-$ git config --global user.name "your username"
-$ git config --global user.email "your email"
-$ git config --global credential.helper osxkeychain
-$ git config --global color.ui auto
+git config --global user.name "your username"
+```
+```bash
+git config --global user.email "your email"
+```
+```bash
+git config --global credential.helper osxkeychain
+```
+```bash
+git config --global color.ui auto
 ```
 
 ***
 
-### <u>Generate SSH Keys</u>
+### <u>SSH Keys</u>
 
 A SSH key is an access credential in the SSH protocol. Its function is similar to that of user names and passwords, but the keys are primarily used for automated processes and for implementing single sign-ons. 
 
 ```bash
-$ ssh-keygen -o -a 256 -t ed25519
+ssh-keygen -o -a 256 -t ed25519
 ```
 Options:
 
 `-a` rounds
+
 `-o` openssh 
+
 `-t` type
 
-To copy public key to a particular server, use: `ssh-copy-id <user@hostname>`
+**To copy public key to a particular server**, use: `ssh-copy-id <user@hostname>`
 
-To setup Github, copy and paste SSH key to Github website. use: `pbcopy < ~/.ssh/id_ed25519.pub` to copy to clipboard.
+To setup Github, copy and paste SSH key to Github website. 
 
-To verify, `ssh -T git@github.com`, you should get message "sucessfully authenticated". 
+Use: `pbcopy < ~/.ssh/id_ed25519.pub` to copy to clipboard.
+
+To verify, `ssh -T git@github.com`, you should get the message "Sucessfully Authenticated". 
 
 ***
 
@@ -228,38 +258,40 @@ To verify, `ssh -T git@github.com`, you should get message "sucessfully authenti
 
 A theme for Zsh. It emphasizes speed, flexibility, and out-of-the-box expierence. With Powerlevel10k, there is no prompt lag. 
 
-Official Github: [Powerlevel10k](https://github.com/romkatv/powerlevel10k)
+**Official Github**: [Powerlevel10k](https://github.com/romkatv/powerlevel10k)
 
 ```bash
-$ git clone --depth=1 https://github.com/romkatv/powerlevel10k.git $ZSH_CUSTOM/themes/powerlevel10k
+git clone --depth=1 https://github.com/romkatv/powerlevel10k.git $ZSH_CUSTOM/themes/powerlevel10k
 ```
 
 Set `ZSH_THEME="powerlevel10k/powerlevel10k"` in `~/.zshrc`
 
 ```bash
-$ source ~/.zshrc
+source ~/.zshrc
 ```
 
-To configure, use `p10k configure`
+**To configure Powerlevel10k**, use `p10k configure`
 
 ***
 
-### Message of the Day
+### <u>Message of the Day</u>
 
 A welcome message shown to a user upon the terminal login. 
 
 ```bash
-$ brew install cowsay lolcat fortune
+brew install cowsay lolcat fortune
 ```
 
 `cowsay` generates ASCII pictures of a cow with a message.
+
 `lolcat` is a utility which adds a rainbow coloring to the cat like command. 
+
 `fortune` displays a pseudo-random message from a database of quotations. 
 
 Edit the `~/.zprofile` using the following command:
 
 ```bash
-$ vim ~/.zprofile
+nano ~/.zprofile
 ```
 Add: `fortune | cowsay | lolcat`. Save and exit. 
 
@@ -267,151 +299,148 @@ Add: `fortune | cowsay | lolcat`. Save and exit.
 
 ### <u>Homebrew Packages</u>
 
-Here are some Homebrew formulas that are useful.
-
-
+Here are some Homebrew formulae that are useful.
 
 #### **tree**
 Display directories as trees
 ```bash
-$ brew install tree
+brew install tree
 ```
 #### **fzf**
 Command-Line Fuzzy Finder 
 ```bash
-$ brew install fzf
+brew install fzf
 ```
 #### **ack**
 Search tool similar to grep, but optimized for programmers
 ```bash
-$ brew install ack
+brew install ack
 ```
 #### **htop**
 Improved top (Interactive Process Viewer)
 ```bash
-$ brew install htop
+brew install htop
 ```
 #### **httpd**
 Apache HTTP Server
 ```bash
-$ brew install httpd
+brew install httpd
 ```
 #### **gcc**
 GNU Complier Collection
 ```bash
-$ brew install gcc
+brew install gcc
 ```
 #### **mas**
 Mac App Store Command Line Interface
 ```bash
-$ brew install mas
+brew install mas
 ```
 #### **neofetch**
 Fast, highly customisible system info script
 ```bash
-$ brew install neofetch
+brew install neofetch
 ```
 #### **nmap**
 Port scanning utility for large networks
 ```bash
-$ brew install nmap
+brew install nmap
 ```
 #### **openSSH**
 OpenBSD SSH connectivity tools
 ```bash
-$ brew install openssh
+brew install openssh
 ```
 #### **openSSL**
 Cryptography and SSL/TLS toolkit
 ```bash
-$ brew install openssl
+brew install openssl
 ```
 #### **p7zip**
 7-Zip (High Compression File Archiver)
 ```bash
-$ brew install p7zip 
+brew install p7zip 
 ```
 #### **rsync**
 Utility that provides fast incremental file transfer
 ```bash
-$ brew install rsync 
+brew install rsync 
 ```
 #### **ssh-copy-id**
 Add a public key to a remote machine's authorized_keys file
 ```bash
-$ brew install ssh-copy-id 
+brew install ssh-copy-id 
 ```
 #### **subnetcalc**
 IPv4/IPv6 subnet calculator
 ```bash
-$ brew install subnetcalc
+brew install subnetcalc
 ```
 #### **telnet**
 User interface to the TELNET protocol
 ```bash
-$ brew install telnet
+brew install telnet
 ```
 #### **the silver searcher**
 Code search similar to ack
 ```bash
-$ brew install the_silver_searcher
+brew install the_silver_searcher
 ```
 #### **thefuck**
 Programmatically correct mistyped console commands
 ```bash
-$ brew install thefuck
+brew install thefuck
 ```
 #### **TLDR**
 Simplified and Community-Driven Man pages
 ```bash
-$ brew install tldr
+brew install tldr
 ```
 #### **tmux**
 Terminal Multiplexer
 ```bash
-$ brew install tmux
+brew install tmux
 ```
 #### **trash**
 CLI tool that moves files or folders to the trash
 ```bash
-$ brew install trash
+brew install trash
 ```
 #### **unzip**
 Extraction utility for .zip compressed archives
 ```bash
-$ brew install unzip
+brew install unzip
 ```
 #### **watch**
 Executes a program periodically, showing output fullscreen
 ```bash
-$ brew install watch
+brew install watch
 ```
 #### **wget**
 Internet file retriever 
 ```bash
-$ brew install wget
+brew install wget
 ```
 #### **youtube-dl**
 Download YouTube videos from the command-line
 ```bash
-$ brew install youtube-dl
+brew install youtube-dl
 ```
 #### **vim**
 Vi with many additional features
 ```bash 
-$ brew install vim
+brew install vim
 ```
 #### **exa**
 Modern replacement for ls command
 ```bash
-$ brew install exa
+brew install exa
 ```
 #### **autojump**
 Shell extention to jump to frequently used directories 
 ```bash
-$ brew install autojump
+brew install autojump
 ```
-
 ***
 
 ### <u>Speedtest CLI by Ookla</u>
@@ -419,38 +448,42 @@ $ brew install autojump
 Measure internet connection performance metrics like download, upload, latency and packet loss natively without relying on a web browser:
 
 ```bash
-$ brew tap teamookla/speedtest
-$ brew update
-$ brew install speedtest --force
+brew tap teamookla/speedtest
 ```
-Usage: `$ speedtest`
+```bash
+brew update
+```
+```bash
+brew install speedtest --force
+```
+**Usage**: `$ speedtest`
 
 ***
 
-### GPG
+### <u>GPG</u>
 
 GPG is a free software alternative to the closed source commercial PGP. You will also need pinentry-mac. `pinentry-mac` is a tool which prompts with a native dialog box for your GPG key passphrase and also allows you to store the password in your Mac’s keychain. To install GPG and pinentry-mac, use the following command: 
 
 ```bash
-$ brew install gpg pinentry-mac
+brew install gpg pinentry-mac
 ```
 To list the GPG keys, use the command:
 
 ```bash
-$ gpg --list-keys
+gpg --list-keys
 ```
 * Your keyring should be empty at this point. 
 
 To enable pinentry, edit the `$HOME/.gnupg/gpg-agent.conf` file, use the command: 
 
 ```bash
-$ echo "pinentry-program /usr/local/bin/pinentry-mac" >> $HOME/.gnupg/gpg-agent.conf
+echo "pinentry-program /usr/local/bin/pinentry-mac" >> $HOME/.gnupg/gpg-agent.conf
 ```
 
 To **GENERATE A MASTER KEY**, use the command:
 
 ```bash
-$ gpg --expert --full-generate-key
+gpg --expert --full-generate-key
 ```
 
 * When prompted for what kind of key, pick option: `(8) RSA (set your own capabilities)`.
@@ -480,7 +513,7 @@ You will now be prompted for your master key passphrase. Please ensure this is a
 * To set secure preferences on key, use the following command:
 
 ```bash
-$ gpg --edit-key YOUR@EMAIL.com
+gpg --edit-key YOUR@EMAIL.com
 ```
 
 * Paste `setpref SHA512 SHA384 SHA256 SHA224 AES256 AES192 AES CAST5 ZLIB BZIP2 ZIP Uncompressed` into it and press `enter`.
@@ -492,7 +525,7 @@ $ gpg --edit-key YOUR@EMAIL.com
 To **ADD A SUBKEY** to be used to encrypt and sign, use the following command:
 
 ```bash
-$ gpg --expert --edit-key YOUR@EMAIL.com
+gpg --expert --edit-key YOUR@EMAIL.com
 ```
 
 * At the prompt, type `addkey`.
@@ -515,18 +548,18 @@ $ gpg --expert --edit-key YOUR@EMAIL.com
 To **EXPORT YOUR PRIVATE KEY**, use the command: 
 
 ```bash
-$ gpg --export-secret-keys --armor YOUR@EMAIL.com > YOUR@EMAIL.com.private.gpg-key
+gpg --export-secret-keys --armor YOUR@EMAIL.com > YOUR@EMAIL.com.private.gpg-key
 ```
 
 To **EXPORT YOUR PUBLIC KEY**, use the command: 
 
 ```bash
-$ gpg --export --armor YOUR@EMAIL.com > YOUR@EMAIL.com.public.gpg-key
+gpg --export --armor YOUR@EMAIL.com > YOUR@EMAIL.com.public.gpg-key
 ```
 
 To **CREATE A REVOCATION CERTIFICATE**, use the command:
 ```bash
-$ gpg --output YOUR@EMAIL.com.gpg-revocation-certificate --gen-revoke YOUR@EMAIL.com
+gpg --output YOUR@EMAIL.com.gpg-revocation-certificate --gen-revoke YOUR@EMAIL.com
 ```
 
 * Follow the prompts to create the revocation certificate. For reason, I suggest `1 = Key has been compromised` and you can hit enter on the description line (it’s not needed).
@@ -542,17 +575,38 @@ I suggest deleting the private key and revocation certificate from your computer
 A interpreted, high-level, general-purpose programming language. There are many ways to install Python, but I found this to be best. 
 
 ```bash
-$ brew install pyenv
-$ pyenv install -l
-$ pyenv install 3.9.4
-$ pyenv global 3.9.4
-$ pyenv version
-$ echo -e 'if command -v pyenv 1>/dev/null 2>&1; then\n  eval "$(pyenv init -)"\nfi' >> ~/.zshrc
-$ exec $SHELL
-$ which python
-$ python -V
-$ pip -V
-$ pip install --upgrade pip
+brew install pyenv
+```
+
+```bash
+pyenv install -l
+```
+```bash
+pyenv install 3.10.0
+```
+```bash
+pyenv global 3.10.0
+```
+```bash
+pyenv version
+```
+```bash
+echo -e 'if command -v pyenv 1>/dev/null 2>&1; then\n  eval "$(pyenv init -)"\nfi' >> ~/.zshrc
+```
+```bash
+exec $SHELL
+```
+```bash
+which python
+```
+```bash
+python -V
+```
+```bash
+pip -V
+```
+```bash
+pip install --upgrade pip
 ```
 
 ***
@@ -562,7 +616,7 @@ $ pip install --upgrade pip
 A tool to create isolated virtual Python environments. 
 
 ```bash
-$ pip install virtualenv
+pip install virtualenv
 ```
 
 ***
@@ -572,7 +626,7 @@ $ pip install virtualenv
 A packaging tool for Python that solves some common problems associated with the typical workflow using pip, virtualenv, and the good old requirements.txt. 
 
 ```bash
-$ brew install pipenv
+brew install pipenv
 ```
 
 ***
@@ -582,14 +636,28 @@ $ brew install pipenv
 A interpreted, high-level, general-purpose programming language. 
 
 ```bash
-$ brew install rbenv ruby-build
-$ echo 'if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi' >> ~/.zshrc
-$ source ~/.zshrc
-$ rbenv install -l
-$ rbenv install 3.0.1
-$ rbenv global 3.0.1
-$ exec $SHELL
-$ ruby -v
+brew install rbenv ruby-build
+```
+```bash
+echo 'if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi' >> ~/.zshrc
+```
+```bash
+source ~/.zshrc
+```
+```bash
+rbenv install -l
+```
+```bash
+rbenv install 3.0.2
+```
+```bash
+rbenv global 3.0.2
+```
+```bash
+exec $SHELL
+```
+```bash
+ruby -v
 ```
 
 ***
@@ -599,8 +667,10 @@ $ ruby -v
 Ruby package manager
 
 ```bash
-$ which gem
-$ gem install bundler
+which gem
+```
+```bash
+gem install bundler
 ```
 
 ***
@@ -610,9 +680,13 @@ $ gem install bundler
 A web-application framework that includes everything needed to create database-backed web applications. 
 
 ```bash
-$ gem install rails -v 6.1.3.1
-$ rbenv rehash
-$ rails -v
+gem install rails -v 6.1.4
+```
+```bash
+rbenv rehash
+```
+```bash
+rails -v
 ```
 
 ***
@@ -622,16 +696,20 @@ $ rails -v
 A open-source relational database management system. 
 
 ```bash
-$ brew install mysql
+brew install mysql
 ```
 
 ```bash
-$ unset TMPDIR
-$ mkdir /usr/local/var
-$ mysql_install_db --verbose --user=`whoami` --basedir="$(brew --prefix mysql)" --datadir=/usr/local/var/mysql --tmpdir=/tmp
+unset TMPDIR
+```
+```bash
+mkdir /usr/local/var
+```
+```bash
+mysql_install_db --verbose --user=`whoami` --basedir="$(brew --prefix mysql)" --datadir=/usr/local/var/mysql --tmpdir=/tmp
 ```
 
-<u>Usage</u>:
+**Usage**:
 
 Start: `mysql.server start`
 
@@ -648,7 +726,7 @@ Connect CLI: `mysql -uroot`
 GUI client for MySQL
 
 ```bash
-$ brew cask install --appdir="/Applications" mysqlworkbench
+brew install --cask --appdir="/Applications" mysqlworkbench
 ```
 
 ***
@@ -658,11 +736,13 @@ $ brew cask install --appdir="/Applications" mysqlworkbench
 A open-source relational database management system emphaszing extensibility and technical standards compliance.
 
 ```bash
-$ brew install postgresql
-$ postgres --version
+brew install postgresql
+```
+```bash
+postgres --version
 ```
 
-<u>Usage</u>:
+**Usage**:
 
 Create Database: `$ initdb /usr/local/var/postgres` 
 
@@ -679,8 +759,10 @@ Create actual Database: `createdb mydatabasename` , `dropdb mydatabasename`
 A popular NoSQL database
 
 ```bash
-$ brew tap mongodb/brew
-$ brew install mongodb-community@4.2
+brew tap mongodb/brew
+```
+```bash
+brew install mongodb-community@4.2
 ```
 
 To start MongoDB: `brew services start mongodb`
@@ -692,7 +774,7 @@ To start MongoDB: `brew services start mongodb`
 A open-source, cross-platform,  Javascript runtime enviornment that executes Javascript code outside of a browser. 
 
 ```bash
-$ brew install node
+brew install node
 ```
 
 ***
@@ -701,8 +783,8 @@ $ brew install node
 
 A package manager for your code. It allows your to use and share code with other developers quickly and securely.
 
-```
-$ brew install yarn --ignore-dependencies
+```bash
+brew install yarn --ignore-dependencies
 ```
 
 ***
@@ -712,7 +794,7 @@ $ brew install yarn --ignore-dependencies
 A statically typed, complied programming language designed at Google. Similar to C, but with memory safety, garbarge collection, structural typing, and CSP-style concurrency. 
 
 ```bash
-$ brew install go
+brew install go
 ```
 
 ***
@@ -722,8 +804,10 @@ $ brew install go
 A unified tool to manage your AWS service, allowing you to control multiple AWS services from the command line and to automate them through scripts. 
 
 ```bash
-$ brew install awscli
-$ aws configure
+brew install awscli
+```
+```bash
+aws configure
 ```
 
 ***
@@ -733,7 +817,7 @@ $ aws configure
 The official AWS SDK for Python
 
 ```bash
-$ pip install boto	
+pip install boto	
 ```
 
 ***
@@ -746,21 +830,15 @@ Download: [Docker for Mac](https://hub.docker.com/editions/community/docker-ce-d
 
 ***
 
-### <u>Java JDK 11</u>
+### <u>Java JDK 8</u>
 
 A development enviornment for building applications and components using the Java programming language.
 
 ```bash
-$ brew tap adoptopenjdk/openjdk
-$ brew install adoptopenjdk11
-$ brew install maven
+brew tap homebrew/cask-versions
 ```
-AdpotOpenJDK is deprecated. Use Temurin instead.
-
 ```bash
-$ brew untap AdoptOpenJDK/openjdk
-$ brew tap homebrew/cask-versions
-$ brew install --cask temurin11
+brew install --cask temurin8
 ```
 
 ***
@@ -770,10 +848,12 @@ $ brew install --cask temurin11
 A network suite of tools to access WiFi network security. 
 
 ```bash
-$ brew install aircrack-ng
-$ sudo ln -s /System/Library/PrivateFrameworks/Apple80211.framework/Versions/Current/Resources/airport /usr/local/bin/airport
+brew install aircrack-ng
 ```
-Usage:
+```bash
+sudo ln -s /System/Library/PrivateFrameworks/Apple80211.framework/Versions/Current/Resources/airport /usr/local/bin/airport
+```
+**Usage**:
 
 * Scan Wifi:  `airport -s`
 
@@ -796,22 +876,34 @@ Usage:
 A open-source cross-platform web server software.
 
 ```bash
-$ sudo apachectl stop
-$ sudo launchctl unload -w /System/Library/LaunchDaemons/org.apache.httpd.plist 2>/dev/null
-$ brew install httpd
-$ sudo brew services restart httpd
-$ sudo nano /usr/local/etc/httpd/httpd.conf
+sudo apachectl stop
+```
+```bash
+sudo launchctl unload -w /System/Library/LaunchDaemons/org.apache.httpd.plist 2>/dev/null
+```
+```bash
+brew install httpd
+```
+```bash
+sudo brew services restart httpd
+```
+```bash
+sudo nano /usr/local/etc/httpd/httpd.conf
 ```
 
-**Note:** On M1 Mac, the `httpd.conf` is located in `/opt/homebrew/etc/httpd/httpd.conf`
+**Note:** On Apple Silicon, the `httpd.conf` is located in `/opt/homebrew/etc/httpd/httpd.conf`
 
-Find and replace, `Listen 8080` to `Listen 80` , and `ServerName www.example.com:8080` to `ServerName localhost`
+Find and replace, 
+
+`Listen 8080` to `Listen 80` 
+
+`ServerName www.example.com:8080` to `ServerName localhost`
 
 ```bash
 $ sudo apachectl -k restart
 ```
 
-To verify, go to browser and type "`localhost`" in search bar. You should see `"It Works!"`
+To verify, go to your browser and type "`localhost`" in search bar. You should see `"It Works!"`
 
 
 ***
@@ -819,17 +911,25 @@ To verify, go to browser and type "`localhost`" in search bar. You should see `"
 ### <u>PHP</u>
 
 ```bash
-$ brew install php@8.0
-$ brew install composer
+brew install php@8.0
+```
+```bash
+brew install composer
 ```
 
-Test:
+**To test if PHP is working**:
 
 ```bash
-$ mkdir test
-$ cd test
-$ composer require atk4/ui
-$ nano test.php
+mkdir test
+```
+```bash
+cd test
+```
+```bash
+composer require atk4/ui
+```
+```bash
+nano test.php
 ```
 
 Paste the following in PHP file:
@@ -845,22 +945,28 @@ $app->add(['Label', 'Your PHP Version:', 'big blue', 'detail'=>phpversion()]);
 Save and exit.
 
 ```bash
-$ php -S 127.0.0.1:8080
+php -S 127.0.0.1:8080
 ```
 
 Now, go on browser and navigate to: `http://127.0.0.1:8080/test.php`
 
 ***
 
-### <u>Setting up php-fpm with Nginx</u>
+### <u>PHP-FPM with Nginx</u>
 
 ```bash
-$ brew install nginx
-$ sudo brew services start nginx
-$ brew services start php
+brew install nginx
+```
+```bash
+sudo brew services start nginx
+```
+```bash
+brew services start php
 ```
 
-Edit the server section from `/usr/local/etc/nginx/nginx.conf` or `/opt/homebrew/etc/nginc/nginx.conf` on M1 Mac. 
+Edit the server section from `/usr/local/etc/nginx/nginx.conf`
+
+**Note**:  `/opt/homebrew/etc/nginc/nginx.conf` on Apple Silicon. 
 
 ```bash
 server {
@@ -890,13 +996,13 @@ server {
 ```
 ***
 
-### <u>Sublime Text 3</u>
+### <u>Sublime Text</u>
 
 A source code editor with a Python application programming interface. Supports many programming languages. 
 
 Download: [Sublime Text 3](https://www.sublimetext.com)
 
-To block updates, add the following lines to `/etc/hosts`:
+**To block updates**, add the following lines to `/etc/hosts`:
 
 ```
 127.0.0.1 license.sublimehq.com
@@ -962,7 +1068,7 @@ Settings for Sublime:
 A lightweight code editor with support for many programming languages through extensions.
 
 ```bash
-$ brew cask install visual-studio-code
+brew install --cask visual-studio-code
 ```
 
 ### <u>VirtualBox</u>
@@ -970,18 +1076,18 @@ $ brew cask install visual-studio-code
 Creates and manage virtual machines. A free solution to VMWare.
 
 ```bash
-brew cask install --appdir="/Applications" virtualbox
+brew install --cask --appdir="/Applications" virtualbox
 ```
 
 ***
 
-### <u>Alias</u>
+### <u>Setting up Alias</u>
 
 A list of alias that instucts the shell to replace one string with another string while executing the commands. Like a shortcut. 
 
-Add the following to `~/.zshrc` using the command `vim ~/.zshrc`:
+Add the following to `~/.zshrc` using the command `nano ~/.zshrc`:
 
-```
+```bash
 alias zshconfig="vim ~/.zshrc" 
 alias ls="ls -G" 
 alias grep="grep -n -G" 
@@ -996,6 +1102,7 @@ alias update="brew update && brew upgrade"
 alias ..="cd .."
 alias ...="cd ../../../" 
 alias ....="cd ../../../../"
+alias msfconsole="/opt/metasploit-framework/bin/msfconsole"
 ```
 
 ***
@@ -1005,15 +1112,19 @@ alias ....="cd ../../../../"
 Apple's Mac OS system can always read Windows NTFS formatted drives, but cannot write to them. This method will allow you to write to NTFS formatted drives. 
 
 ```bash
-$ brew cask install osxfuse
-$ brew install ntfs-3g
+brew cask install osxfuse
+```
+```bash
+brew install ntfs-3g
 ```
 
-Reboot into Recovery Mode (⌘-R). Open terminal and enter following command:
+Shutdown and reboot the computer into Recovery Mode by holding (⌘-R). Open terminal and enter following command:
 
 ```bash
-$ csrutil disable
-$ diskutil list
+csrutil disable
+```
+```bash
+diskutil list
 ```
 
 Look for the  `(synthesized)` section with the name `Macintosh HD - Data` , see `Identifier` similar to `disk2s1`.
@@ -1021,22 +1132,32 @@ Look for the  `(synthesized)` section with the name `Macintosh HD - Data` , see 
 Replace your `Identifier` in place of `disk2s1` on the following commands.
 
 ```bash
-$ diskutil apfs unlockVolume disk2s1 
-$ cd /Volumes/Macintosh HD/sbin 
-$ mv mount_ntfs mount_ntfs.orig 
-$ ln -s /usr/local/sbin/mount_ntfs mount_ntfs 
-$ csrutil enable 
-$ reboot
+diskutil apfs unlockVolume disk2s1 
+```
+```bash
+cd /Volumes/Macintosh HD/sbin 
+```
+```bash
+mv mount_ntfs mount_ntfs.orig 
+```
+```bash
+ln -s /usr/local/sbin/mount_ntfs mount_ntfs 
+```
+```bash
+csrutil enable 
+```
+```bash
+reboot
 ```
 
 ***
 
-### <u>Disable Gatekeeper</u>
+### <u>Disable macOS Gatekeeper</u>
 
 Gatekeeper is a security feature of the macOS operation system. It enforces code signing and verifies the downloaded applications before allowing them to run. Disabling this feature will allow your system to run any downloaded software.
 
 ```bash
-$ sudo spctl --master-disable
+sudo spctl --master-disable
 ```
 
 ***
@@ -1048,16 +1169,16 @@ MAC spoofing is a technique for changing a factory-assigned Media Access Control
 Install SpoofMac:
 
 ```bash
-$ brew install spoof-mac
-$ sudo spoof-mac randomize en0
+brew install spoof-mac
 ```
-Change MAC address automatically from boot:
+
+To change MAC address automatically from boot:
 
 ```bash
-$ sudo nano /Library/LaunchDaemons/local.macspoof.plist
+sudo nano /Library/LaunchDaemons/local.macspoof.plist
 ```
 
-Add these lines:
+**Add these lines**:
 
 ```bash
 <?xml version="1.0" encoding="UTF-8"?>
@@ -1077,9 +1198,9 @@ Add these lines:
     </dict>
 </plist>
 ```
-Save and exit. Then Reboot.
+**Save and exit. Then reboot system to see changes**.
 
-**NOTE:** On M1 Mac, change `<string>/usr/local/bin/spoof-mac.py</string>` to  `<string>/opt/homebrew/bin/spoof-mac.py</string>` in the script above.
+**Note:** On Apple Silicon, change `<string>/usr/local/bin/spoof-mac.py</string>` to  `<string>/opt/homebrew/bin/spoof-mac.py</string>` in the script above.
 
 To test MAC address after boot, use: `spoof-mac list`
 
@@ -1090,105 +1211,102 @@ If you don't want to install SpoofMac, you can change MAC address manually using
 Check existing MAC address:
 
 ```bash
-$ ifconfig eno0 | grep ether
+ifconfig eno0 | grep ether
 ```
 
 Generate a random hexadecimal number:
 
 ```bash
-$ openssl rand -hex 6 | sed 's/\(..\)/\1:/g; s/.$//'
+openssl rand -hex 6 | sed 's/\(..\)/\1:/g; s/.$//'
 ```
 
 To change MAC address, use:
 
 ```bash
-$ sudo ifconfig en0 ether <MAC_ADDRESS>
+sudo ifconfig en0 ether <MAC_ADDRESS>
 ```
 *Note: Replace `<MAC_ADDRESS>` with the one you generated.
 
 ***
 
-### <u>Tweaks</u>
+### <u>Tweaks to macOS</u>
 
-Reset dock back to default:
+**Reset dock back to default**:
 ```bash
-$ defaults delete com.apple.dock; killall Dock
+defaults delete com.apple.dock; killall Dock
 ```
 
-Change image type for screenshots:
+**Change image type for screenshots**:
 ```bash
-$ defaults write com.apple.screencapture type -string "png"
+defaults write com.apple.screencapture type -string "png"
 ```
 (Replace `png` with any other i.e. `bmp`, `gif`, `jpg`, `pdf`, `tiff` 
 
 
-Avoid creating .DS_Store ﬁles on network or USB volumes:
+**Avoid creating .DS_Store ﬁles on network or USB volumes**:
 ```bash
-$ defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true
+defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true
 ```
 
-Finder: show all ﬁlename extensions:
+**Finder: show all ﬁlename extensions**:
 ```bash
-$ defaults write NSGlobalDomain AppleShowAllExtensions -bool true
+defaults write NSGlobalDomain AppleShowAllExtensions -bool true
 ```
 
-Finder: show hidden ﬁles by default:
+**Finder: show hidden ﬁles by default**:
 ```bash
-$ defaults write com.apple.finder AppleShowAllFiles -bool true
+defaults write com.apple.finder AppleShowAllFiles -bool true
 ```
 
-Finder: show status bar:
+**Finder: show status bar**:
 ```bash
-$ defaults write com.apple.finder ShowStatusBar -bool true
+defaults write com.apple.finder ShowStatusBar -bool true
 ```
 
-Empty Trash securely by default:
+**Empty Trash securely by default**:
 ```bash
-$ defaults write com.apple.finder EmptyTrashSecurely -bool true
+defaults write com.apple.finder EmptyTrashSecurely -bool true
 ```
 
-Full Path in Finder Title Bar: 
+**Full Path in Finder Title Bar**: 
 ```bash
-$ defaults write com.apple.finder _FXShowPosixPathInTitle -bool YES;
+defaults write com.apple.finder _FXShowPosixPathInTitle -bool YES;
 ```
 
-Automatically quit printer app once print jobs has been completed:
+**Automatically quit printer app once print jobs has been completed**:
 ```bash
-$ defaults write com.apple.print.PrintingPrefs "Quit When Finished" -bool true
+defaults write com.apple.print.PrintingPrefs "Quit When Finished" -bool true
 ```
 
-Disable the “Are you sure you want to open this application?” dialog message:
+**Disable the “Are you sure you want to open this application?” dialog message**:
 ```bash
-$ defaults write com.apple.LaunchServices LSQuarantine -bool false
+defaults write com.apple.LaunchServices LSQuarantine -bool false
 ```
 
-Reveal IP address, hostname, OS version, etc. when clicking the clock in the login window
+**Don't send search queries to Apple in Safari**:
 ```bash
-$ sudo defaults write /Library/Preferences/com.apple.loginwindow AdminHostInfo HostName
+defaults write com.apple.Safari UniversalSearchEnabled -bool false
 ```
-
-Don't send search queries to Apple in Safari:
 ```bash
-$ defaults write com.apple.Safari UniversalSearchEnabled -bool false
-$ defaults write com.apple.Safari SuppressSearchSuggestions -bool true
+defaults write com.apple.Safari SuppressSearchSuggestions -bool true
 ```
 
 ***
 
-### CTF Tools
+### <u>Capture The Flag Tools<u>
 
 A collection of Capture the Flag (CTF) Tools
 
 ``` bash
-$ brew install bfg binutils binwalk cifer dex2jar dns2tcp fcrackzip foremost hashpump hydra john knock netpbm pngcheck socat sqlmap tcpflow tcpreplay tcptrace xz ucspi-tcp
+brew install bfg binutils binwalk cifer dex2jar dns2tcp fcrackzip foremost hashpump hydra john knock netpbm pngcheck socat sqlmap tcpflow tcpreplay tcptrace xz ucspi-tcp
 ```
 
 ***
 
-### Metasploit Framework 
+### <u>Metasploit Framework</u>
 
 ```bash
-$ curl https://raw.githubusercontent.com/rapid7/metasploit-omnibus/master/config/templates/metasploit-framework-wrappers/msfupdate.erb > msfinstall && \
+curl https://raw.githubusercontent.com/rapid7/metasploit-omnibus/master/config/templates/metasploit-framework-wrappers/msfupdate.erb > msfinstall && \
   chmod 755 msfinstall && \
   ./msfinstall
 ```
@@ -1197,7 +1315,7 @@ To run use: `$ /opt/metasploit-framework/bin/msfconsole`
 
 ***
 
-### <u>Firefox Browser Extensions</u>
+### <u>Recommended Firefox Browser Extensions</u>
 
 A list of Firefox extensions that can help with online privacy. 
 
@@ -1249,63 +1367,65 @@ network.IDN_show_punycode = true
 
 ***
 
-### macOS Appearance 
+### <u>macOS Appearance</u>
 
 Reduce Transparency:
 ```bash
-$ defaults write com.apple.universalaccess reduceTransparency -bool true
+defaults write com.apple.universalaccess reduceTransparency -bool true
 ```
 Restore Default Transparency:
 ```bash
-$ defaults write com.apple.universalaccess reduceTransparency -bool false
+defaults write com.apple.universalaccess reduceTransparency -bool false
 ```
 
 ***
 
-### Save to Disk by Default (Not iCloud)
+### <u>Save to Disk by Default (Not iCloud)</u>
 
 Sets default save target to local disk instead of iCloud
 
 ```bash
-$ defaults write -g NSDocumentSaveNewDocumentsToCloud -bool false
+defaults write -g NSDocumentSaveNewDocumentsToCloud -bool false
 ```
 
 ***
 
-### Disable Adobe Acrobat Updater
+### <u>Disable Adobe Acrobat Updater</u>
 
 ```bash
-$ defaults write com.adobe.AdobeUpdater.Admin Disable.Update -bool yes
+defaults write com.adobe.AdobeUpdater.Admin Disable.Update -bool yes
 ```
 
 ***
 
-### Transmission App
+### <u>Transmission Torrent Client</u>
 
 Don’t prompt for confirmation before downloading:
 ```bash
-$ defaults write org.m0k.transmission DownloadAsk -bool false
-$ defaults write org.m0k.transmission MagnetOpenAsk -bool false
+defaults write org.m0k.transmission DownloadAsk -bool false
+```
+```bash
+defaults write org.m0k.transmission MagnetOpenAsk -bool false
 ```
 
 Don’t prompt for confirmation before removing non-downloading active transfers:
 ```bash
-$ defaults write org.m0k.transmission CheckRemoveDownloading -bool true
+defaults write org.m0k.transmission CheckRemoveDownloading -bool true
 ```
 
 Hide the donate message:
 ```bash
-$ defaults write org.m0k.transmission WarningDonate -bool false
+defaults write org.m0k.transmission WarningDonate -bool false
 ```
 
 Hide the legal disclaimer:
 ```bash
-$ defaults write org.m0k.transmission WarningLegal -bool false
+defaults write org.m0k.transmission WarningLegal -bool false
 ```
 
 Randomize port on launch:
 ```bash
-$ defaults write org.m0k.transmission RandomPort -bool true
+defaults write org.m0k.transmission RandomPort -bool true
 ```
 
 ***
