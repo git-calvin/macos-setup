@@ -14,34 +14,34 @@ Last Updated on 11-05-2021
     - [<u>Powerlevel10k</u>](#powerlevel10k)
     - [<u>Message of the Day</u>](#message-of-the-day)
     - [<u>Homebrew Packages</u>](#homebrew-packages)
-      - [**tree**](#tree)
-      - [**fzf**](#fzf)
-      - [**ack**](#ack)
-      - [**htop**](#htop)
-      - [**httpd**](#httpd)
-      - [**gcc**](#gcc)
-      - [**mas**](#mas)
-      - [**neofetch**](#neofetch)
-      - [**nmap**](#nmap)
-      - [**openSSH**](#openssh)
-      - [**openSSL**](#openssl)
-      - [**p7zip**](#p7zip)
-      - [**rsync**](#rsync)
-      - [**ssh-copy-id**](#ssh-copy-id)
-      - [**subnetcalc**](#subnetcalc)
-      - [**telnet**](#telnet)
-      - [**the silver searcher**](#the-silver-searcher)
-      - [**thefuck**](#thefuck)
-      - [**TLDR**](#tldr)
-      - [**tmux**](#tmux)
-      - [**trash**](#trash)
-      - [**unzip**](#unzip)
-      - [**watch**](#watch)
-      - [**wget**](#wget)
-      - [**youtube-dl**](#youtube-dl)
-      - [**vim**](#vim)
-      - [**exa**](#exa)
-      - [**autojump**](#autojump)
+      - [tree](#tree)
+      - [fzf](#fzf)
+      - [ack](#ack)
+      - [htop](#htop)
+      - [httpd](#httpd)
+      - [gcc](#gcc)
+      - [mas](#mas)
+      - [neofetch](#neofetch)
+      - [nmap](#nmap)
+      - [openSSH](#openssh)
+      - [openSSL](#openssl)
+      - [p7zip](#p7zip)
+      - [rsync](#rsync)
+      - [ssh-copy-id](#ssh-copy-id)
+      - [subnetcalc](#subnetcalc)
+      - [telnet](#telnet)
+      - [the silver searcher](#the-silver-searcher)
+      - [thefuck](#thefuck)
+      - [TLDR](#tldr)
+      - [tmux](#tmux)
+      - [trash](#trash)
+      - [unzip](#unzip)
+      - [watch](#watch)
+      - [wget](#wget)
+      - [youtube-dl](#youtube-dl)
+      - [vim](#vim)
+      - [exa](#exa)
+      - [autojump](#autojump)
     - [<u>Speedtest CLI by Ookla</u>](#speedtest-cli-by-ookla)
     - [<u>GPG</u>](#gpg)
     - [<u>Python</u>](#python)
@@ -74,6 +74,7 @@ Last Updated on 11-05-2021
     - [<u>Spoof MAC Address</u>](#spoof-mac-address)
     - [<u>Tweaks to macOS</u>](#tweaks-to-macos)
     - [<u>Capture The Flag Tools<u>](#capture-the-flag-tools)
+    - [<u>Ghidra</u>](#ghidra)
     - [<u>Metasploit Framework</u>](#metasploit-framework)
     - [<u>Recommended Firefox Browser Extensions</u>](#recommended-firefox-browser-extensions)
     - [<u>Firefox Privacy Focused Configuration</u>](#firefox-privacy-focused-configuration)
@@ -1103,6 +1104,7 @@ alias ..="cd .."
 alias ...="cd ../../../" 
 alias ....="cd ../../../../"
 alias msfconsole="/opt/metasploit-framework/bin/msfconsole"
+alias ghidra="ghidraRUN"
 ```
 
 ***
@@ -1302,6 +1304,17 @@ brew install bfg binutils binwalk cifer dex2jar dns2tcp fcrackzip foremost hashp
 ```
 
 ***
+
+### <u>Ghidra</u>
+
+A software reverse engineering suite of tools developed by NSA.
+
+```bash
+brew install --cask ghidra
+```
+
+***
+	
 
 ### <u>Metasploit Framework</u>
 
