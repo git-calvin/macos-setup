@@ -1312,7 +1312,8 @@ A software reverse engineering suite of tools developed by NSA.
 ```bash
 brew install --cask ghidra
 ```
-
+To run, use `ghidraRUN`
+	
 ***
 	
 
