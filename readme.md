@@ -661,6 +661,20 @@ exec $SHELL
 ruby -v
 ```
 
+**Usage**:
+```bash
+# list all available versions installed on the system
+rbenv install -l
+# install a Ruby version
+rbenv install 3.0.1
+```
+```bash
+# set a local application-specific Ruby version in the currrent directory
+rbenv local 3.0.1
+# set the global version of Ruby to be used in all shells
+rbenv global 3.0.1
+```
+
 ***
 
 ### <u>RubyGems and Bundler</u>
