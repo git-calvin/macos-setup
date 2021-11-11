@@ -445,11 +445,12 @@ brew install autojump
 ```
 #### **geoiplookup**
 Gives you geolocation data for entered IP address. 
+```bash
 brew install geoip
 ```
 ***
 
-#### Using GNU Command Line Tools
+#### **Using GNU Command Line Tools**
 
 ```bash
 brew install autoconf bash binutils coreutils diffutils ed findutils flex gawk gnu-indent gnu-sed gnu-tar gnu-which gpatch grep gzip less m4 make nano screen watch wdiff wget
