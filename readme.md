@@ -1,5 +1,4 @@
 # A Basic Development Setup Guide for macOS
-Last Updated on 11-05-2021
 ***
 - [A Basic Development Setup Guide for macOS](#a-basic-development-setup-guide-for-macos)
     - [<u>Software Update</u>](#software-update)
@@ -42,6 +41,8 @@ Last Updated on 11-05-2021
       - [vim](#vim)
       - [exa](#exa)
       - [autojump](#autojump)
+      - [geoiplookup](#geoiplookup)
+    - [<u>Using GNU Command Line Tools</u>](#using-gnu-command-line-tools)
     - [<u>Speedtest CLI by Ookla</u>](#speedtest-cli-by-ookla)
     - [<u>GPG</u>](#gpg)
     - [<u>Python</u>](#python)
@@ -442,6 +443,32 @@ Shell extention to jump to frequently used directories
 ```bash
 brew install autojump
 ```
+#### **geoiplookup**
+Gives you geolocation data for entered IP address. 
+brew install geoip
+```
+***
+
+#### Using GNU Command Line Tools
+
+```bash
+brew install autoconf bash binutils coreutils diffutils ed findutils flex gawk gnu-indent gnu-sed gnu-tar gnu-which gpatch grep gzip less m4 make nano screen watch wdiff wget
+```
+
+Homebrew can be used to install GNU versions of the tools on your mac, but they are all prefixed with the "g" by default. 
+
+Assuming you want to use the GNU versions instead of the BSD versions, you can append the following to you `~/.profile` file.
+
+```bash
+if type brew &>/dev/null; then
+  HOMEBREW_PREFIX=$(brew --prefix)
+  for d in ${HOMEBREW_PREFIX}/opt/*/libexec/gnubin; do export PATH=$d:$PATH; done
+fi
+```
+```bash
+source ~/.profile
+```
+
 ***
 
 ### <u>Speedtest CLI by Ookla</u>
